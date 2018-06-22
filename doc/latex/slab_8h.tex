@@ -1,0 +1,138 @@
+\hypertarget{slab_8h}{\section{slab.\-h File Reference}
+\label{slab_8h}\index{slab.\-h@{slab.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{slab_8h_a40e04a742d1023bdbcb0b8d39e94da0d}{V\-X\-\_\-permutation\-\_\-inspect} (V\-X\-\_\-uint32 p)
+\item 
+int \hyperlink{slab_8h_a0cf467d4e62063d7b1ceb1848af81a9d}{V\-X\-\_\-cube\-\_\-out\-\_\-point} (int box\-\_\-min\mbox{[}3\mbox{]}, int box\-\_\-max\mbox{[}3\mbox{]}, \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} $\ast$point, \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} $\ast$ray, float out\mbox{[}3\mbox{]}, V\-X\-\_\-byte line\-\_\-perm\mbox{[}3\mbox{]})
+\item 
+int \hyperlink{slab_8h_a26f80b2e2ffd4f833d3aad0f186d7b13}{V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu} (float box\-\_\-min\mbox{[}3\mbox{]}, float box\-\_\-max\mbox{[}3\mbox{]}, \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} $\ast$point, \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} $\ast$ray, float out\mbox{[}3\mbox{]}, V\-X\-\_\-byte line\-\_\-perm\mbox{[}3\mbox{]})
+\item 
+int \hyperlink{slab_8h_ab4f41bcfb09ef8834da53ac13c3f71e3}{V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu} (float box\-\_\-min\mbox{[}3\mbox{]}, float box\-\_\-max\mbox{[}3\mbox{]}, float point\mbox{[}3\mbox{]}, float ray\mbox{[}3\mbox{]}, float out\mbox{[}3\mbox{]}, V\-X\-\_\-byte line\-\_\-perm\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+V\-X\-\_\-uint32($\ast$ \hyperlink{slab_8h_a90d45caa46d797a14ebc4550f01eb910}{V\-X\-\_\-line\-\_\-sort} )(\hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} dir)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{slab_8h_ab4f41bcfb09ef8834da53ac13c3f71e3}{\index{slab.\-h@{slab.\-h}!V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu@{V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu}}
+\index{V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu@{V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu}!slab.h@{slab.\-h}}
+\subsubsection[{V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-cube\-\_\-in\-\_\-point\-\_\-fpu (
+\begin{DoxyParamCaption}
+\item[{float}]{box\-\_\-min\mbox{[}3\mbox{]}, }
+\item[{float}]{box\-\_\-max\mbox{[}3\mbox{]}, }
+\item[{float}]{point\mbox{[}3\mbox{]}, }
+\item[{float}]{ray\mbox{[}3\mbox{]}, }
+\item[{float}]{out\mbox{[}3\mbox{]}, }
+\item[{V\-X\-\_\-byte}]{line\-\_\-perm\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{slab_8h_ab4f41bcfb09ef8834da53ac13c3f71e3}
+Computes input point for a ray to a cube defined by box\-\_\-min and box\-\_\-max points in floating point arithmetics 
+\begin{DoxyParams}{Parameters}
+{\em box\-\_\-min} & integer raw point representing minimal box point \\
+\hline
+{\em box\-\_\-max} & integer raw point representing maximal box point \\
+\hline
+{\em point} & float raw point representing position of observer \\
+\hline
+{\em ray} & float raw direction of ray \\
+\hline
+{\em out} & output raw float point \\
+\hline
+{\em line\-\_\-perm} & sorting permutation of ray given by V\-X\-\_\-line\-\_\-sort \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if no intersection found, 0-\/2 which is index in which intersection occured 
+\end{DoxyReturn}
+\hypertarget{slab_8h_a0cf467d4e62063d7b1ceb1848af81a9d}{\index{slab.\-h@{slab.\-h}!V\-X\-\_\-cube\-\_\-out\-\_\-point@{V\-X\-\_\-cube\-\_\-out\-\_\-point}}
+\index{V\-X\-\_\-cube\-\_\-out\-\_\-point@{V\-X\-\_\-cube\-\_\-out\-\_\-point}!slab.h@{slab.\-h}}
+\subsubsection[{V\-X\-\_\-cube\-\_\-out\-\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-cube\-\_\-out\-\_\-point (
+\begin{DoxyParamCaption}
+\item[{int}]{box\-\_\-min\mbox{[}3\mbox{]}, }
+\item[{int}]{box\-\_\-max\mbox{[}3\mbox{]}, }
+\item[{{\bf V\-X\-\_\-fpoint3} $\ast$}]{point, }
+\item[{{\bf V\-X\-\_\-fpoint3} $\ast$}]{ray, }
+\item[{float}]{out\mbox{[}3\mbox{]}, }
+\item[{V\-X\-\_\-byte}]{line\-\_\-perm\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{slab_8h_a0cf467d4e62063d7b1ceb1848af81a9d}
+Computes output point for a ray from cube defined by box\-\_\-min and box\-\_\-max points in mostly integer arithmetics 
+\begin{DoxyParams}{Parameters}
+{\em box\-\_\-min} & integer raw point representing minimal box point \\
+\hline
+{\em box\-\_\-max} & integer raw point representing maximal box point \\
+\hline
+{\em point} & float raw point representing position of observer \\
+\hline
+{\em ray} & float raw direction of ray \\
+\hline
+{\em out} & output raw float point \\
+\hline
+{\em line\-\_\-perm} & sorting permutation of ray given by V\-X\-\_\-line\-\_\-sort \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if no intersection found, 0-\/2 which is index in which intersection occured 
+\end{DoxyReturn}
+\hypertarget{slab_8h_a26f80b2e2ffd4f833d3aad0f186d7b13}{\index{slab.\-h@{slab.\-h}!V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu@{V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu}}
+\index{V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu@{V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu}!slab.h@{slab.\-h}}
+\subsubsection[{V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-cube\-\_\-out\-\_\-point\-\_\-fpu (
+\begin{DoxyParamCaption}
+\item[{float}]{box\-\_\-min\mbox{[}3\mbox{]}, }
+\item[{float}]{box\-\_\-max\mbox{[}3\mbox{]}, }
+\item[{{\bf V\-X\-\_\-fpoint3} $\ast$}]{point, }
+\item[{{\bf V\-X\-\_\-fpoint3} $\ast$}]{ray, }
+\item[{float}]{out\mbox{[}3\mbox{]}, }
+\item[{V\-X\-\_\-byte}]{line\-\_\-perm\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{slab_8h_a26f80b2e2ffd4f833d3aad0f186d7b13}
+Computes output point for a ray from cube defined by box\-\_\-min and box\-\_\-max points in floating point arithmetics 
+\begin{DoxyParams}{Parameters}
+{\em box\-\_\-min} & integer raw point representing minimal box point \\
+\hline
+{\em box\-\_\-max} & integer raw point representing maximal box point \\
+\hline
+{\em point} & float raw point representing position of observer \\
+\hline
+{\em ray} & float raw direction of ray \\
+\hline
+{\em out} & output raw float point \\
+\hline
+{\em line\-\_\-perm} & sorting permutation of ray given by V\-X\-\_\-line\-\_\-sort \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if no intersection found, 0-\/2 which is index in which intersection occured 
+\end{DoxyReturn}
+\hypertarget{slab_8h_a40e04a742d1023bdbcb0b8d39e94da0d}{\index{slab.\-h@{slab.\-h}!V\-X\-\_\-permutation\-\_\-inspect@{V\-X\-\_\-permutation\-\_\-inspect}}
+\index{V\-X\-\_\-permutation\-\_\-inspect@{V\-X\-\_\-permutation\-\_\-inspect}!slab.h@{slab.\-h}}
+\subsubsection[{V\-X\-\_\-permutation\-\_\-inspect}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-permutation\-\_\-inspect (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{p}
+\end{DoxyParamCaption}
+)}}\label{slab_8h_a40e04a742d1023bdbcb0b8d39e94da0d}
+Prints information about sorting permutation to stdout 
+\begin{DoxyParams}{Parameters}
+{\em p} & a valid sorting permutation \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{slab_8h_a90d45caa46d797a14ebc4550f01eb910}{\index{slab.\-h@{slab.\-h}!V\-X\-\_\-line\-\_\-sort@{V\-X\-\_\-line\-\_\-sort}}
+\index{V\-X\-\_\-line\-\_\-sort@{V\-X\-\_\-line\-\_\-sort}!slab.h@{slab.\-h}}
+\subsubsection[{V\-X\-\_\-line\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32($\ast$ V\-X\-\_\-line\-\_\-sort)({\bf V\-X\-\_\-fpoint3} dir)}}\label{slab_8h_a90d45caa46d797a14ebc4550f01eb910}
+Returns sorting permutation of floating point vector dir, the index with the biggest value will be in the third byte of returned value, the index with the second biggest value will be in the second byte, and index with the least value is in the first byte of returned value. 
+\begin{DoxyParams}{Parameters}
+{\em dir} & floating point 3\-D vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorting permutation, where zero byte is index of the least value, byte 1 is index of the second biggest value and byte 2 holds the index with the biggest value. 
+\end{DoxyReturn}

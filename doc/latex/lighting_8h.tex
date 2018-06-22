@@ -1,0 +1,115 @@
+\hypertarget{lighting_8h}{\section{lighting.\-h File Reference}
+\label{lighting_8h}\index{lighting.\-h@{lighting.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__light}{V\-X\-\_\-light}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structVX__light}{V\-X\-\_\-light} \hyperlink{lighting_8h_a98134c0cd9141c7da7fe1f626276fcd0}{V\-X\-\_\-light}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{lighting_8h_aa4108ff569b25e7f6c4157635e572c57}{V\-X\-\_\-light\-\_\-dynamic\-\_\-add} (\hyperlink{structVX__light}{V\-X\-\_\-light} $\ast$l)
+\item 
+void \hyperlink{lighting_8h_a15ab3f04e3079c8440302dd5cbb531c1}{V\-X\-\_\-light\-\_\-remove} (int idx)
+\item 
+void \hyperlink{lighting_8h_ad8e3a81502917bd0844290ddf0f7af93}{V\-X\-\_\-lights\-\_\-clear} ()
+\item 
+V\-X\-\_\-uint32 \hyperlink{lighting_8h_a61aeaa2d0697bff2f9338b086bc1e288}{V\-X\-\_\-lights\-\_\-count} ()
+\item 
+\hyperlink{structVX__light}{V\-X\-\_\-light} $\ast$ \hyperlink{lighting_8h_ac3fe0328b2f0f5f7e956ee545911754a}{V\-X\-\_\-lights\-\_\-enumerate} ()
+\item 
+void \hyperlink{lighting_8h_aed6c091b832ed11bcbcc7f46be3df6a3}{V\-X\-\_\-ambient\-\_\-light\-\_\-set} (V\-X\-\_\-uint32 mask)
+\item 
+V\-X\-\_\-uint32 \hyperlink{lighting_8h_a471ae1611bdcecb8a92ecf42be3eb80b}{V\-X\-\_\-ambient\-\_\-light} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{lighting_8h_a98134c0cd9141c7da7fe1f626276fcd0}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-light@{V\-X\-\_\-light}}
+\index{V\-X\-\_\-light@{V\-X\-\_\-light}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-light}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-light} {\bf V\-X\-\_\-light}}}\label{lighting_8h_a98134c0cd9141c7da7fe1f626276fcd0}
+Dynamic light structure 
+
+\subsection{Function Documentation}
+\hypertarget{lighting_8h_a471ae1611bdcecb8a92ecf42be3eb80b}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-ambient\-\_\-light@{V\-X\-\_\-ambient\-\_\-light}}
+\index{V\-X\-\_\-ambient\-\_\-light@{V\-X\-\_\-ambient\-\_\-light}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-ambient\-\_\-light}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-ambient\-\_\-light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_a471ae1611bdcecb8a92ecf42be3eb80b}
+Inspects current ambient light. \begin{DoxyReturn}{Returns}
+A\-R\-B32 color of ambient light 
+\end{DoxyReturn}
+\hypertarget{lighting_8h_aed6c091b832ed11bcbcc7f46be3df6a3}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-ambient\-\_\-light\-\_\-set@{V\-X\-\_\-ambient\-\_\-light\-\_\-set}}
+\index{V\-X\-\_\-ambient\-\_\-light\-\_\-set@{V\-X\-\_\-ambient\-\_\-light\-\_\-set}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-ambient\-\_\-light\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-ambient\-\_\-light\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{mask}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_aed6c091b832ed11bcbcc7f46be3df6a3}
+Sets ambient color for current scene (default is 0xffffffff) 
+\begin{DoxyParams}{Parameters}
+{\em mask} & color of ambient light in A\-R\-G\-B32 format \\
+\hline
+\end{DoxyParams}
+\hypertarget{lighting_8h_aa4108ff569b25e7f6c4157635e572c57}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-light\-\_\-dynamic\-\_\-add@{V\-X\-\_\-light\-\_\-dynamic\-\_\-add}}
+\index{V\-X\-\_\-light\-\_\-dynamic\-\_\-add@{V\-X\-\_\-light\-\_\-dynamic\-\_\-add}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-light\-\_\-dynamic\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-light\-\_\-dynamic\-\_\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-light} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_aa4108ff569b25e7f6c4157635e572c57}
+Adds a dynamic light to scene. 
+\begin{DoxyParams}{Parameters}
+{\em l} & valid pointer to light, invalid may lead to unexpected behavior of raytracing (N\-U\-L\-L is also invalid pointer) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index/identifier of light 
+\end{DoxyReturn}
+\hypertarget{lighting_8h_a15ab3f04e3079c8440302dd5cbb531c1}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-light\-\_\-remove@{V\-X\-\_\-light\-\_\-remove}}
+\index{V\-X\-\_\-light\-\_\-remove@{V\-X\-\_\-light\-\_\-remove}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-light\-\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-light\-\_\-remove (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_a15ab3f04e3079c8440302dd5cbb531c1}
+Removes dynamic light from scene identified by idx. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & identifier of light, if invalid, no light will be removed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{lighting_8h_ad8e3a81502917bd0844290ddf0f7af93}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-lights\-\_\-clear@{V\-X\-\_\-lights\-\_\-clear}}
+\index{V\-X\-\_\-lights\-\_\-clear@{V\-X\-\_\-lights\-\_\-clear}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-lights\-\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-lights\-\_\-clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_ad8e3a81502917bd0844290ddf0f7af93}
+Removes all lights in scene. \hypertarget{lighting_8h_a61aeaa2d0697bff2f9338b086bc1e288}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-lights\-\_\-count@{V\-X\-\_\-lights\-\_\-count}}
+\index{V\-X\-\_\-lights\-\_\-count@{V\-X\-\_\-lights\-\_\-count}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-lights\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-lights\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_a61aeaa2d0697bff2f9338b086bc1e288}
+Obtains number of lights in scene. \begin{DoxyReturn}{Returns}
+count of lights 
+\end{DoxyReturn}
+\hypertarget{lighting_8h_ac3fe0328b2f0f5f7e956ee545911754a}{\index{lighting.\-h@{lighting.\-h}!V\-X\-\_\-lights\-\_\-enumerate@{V\-X\-\_\-lights\-\_\-enumerate}}
+\index{V\-X\-\_\-lights\-\_\-enumerate@{V\-X\-\_\-lights\-\_\-enumerate}!lighting.h@{lighting.\-h}}
+\subsubsection[{V\-X\-\_\-lights\-\_\-enumerate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-light}$\ast$ V\-X\-\_\-lights\-\_\-enumerate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{lighting_8h_ac3fe0328b2f0f5f7e956ee545911754a}
+Enumerates all dynamic lights in scene by returning array of lights \begin{DoxyReturn}{Returns}
+array of lights, N\-U\-L\-L will be returned iff \hyperlink{lighting_8h_a61aeaa2d0697bff2f9338b086bc1e288}{V\-X\-\_\-lights\-\_\-count()} returns 0; 
+\end{DoxyReturn}

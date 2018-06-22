@@ -1,0 +1,90 @@
+\hypertarget{structVX__camera}{\section{V\-X\-\_\-camera Struct Reference}
+\label{structVX__camera}\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}}
+}
+
+
+{\ttfamily \#include $<$camera.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVX__ipoint3}{V\-X\-\_\-ipoint3} \hyperlink{structVX__camera_a60724e5c89d5b3f4b860feef5bd48dd5}{position}
+\item 
+double \hyperlink{structVX__camera_ad367620c428520c36d2a53f4c2db458b}{rotation\-\_\-matrix} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+\hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3}($\ast$ \hyperlink{structVX__camera_a6119ed12afba4631610196a7989fb7cf}{rg} )(struct \hyperlink{structVX__camera}{V\-X\-\_\-camera} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y)
+\item 
+\hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$ \hyperlink{structVX__camera_add16fec4e751e381a855f9ab311a7873}{surface}
+\item 
+\hyperlink{structVX__field}{V\-X\-\_\-field} $\ast$ \hyperlink{structVX__camera_a6162d4618d183193b6da7a3d7bfa573b}{workers}
+\item 
+void($\ast$ \hyperlink{structVX__camera_ac0a8d4af706ab244df474fa60776d30b}{draw} )(struct \hyperlink{structVX__camera}{V\-X\-\_\-camera} $\ast$self, void $\ast$model)
+\item 
+void($\ast$ \hyperlink{structVX__camera_a507391328f61922afd6369562947e7a8}{destroy} )(struct \hyperlink{structVX__camera}{V\-X\-\_\-camera} $\ast$self)
+\item 
+\hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} $\ast$ \hyperlink{structVX__camera_ab99ed3683f52574a5a6dfadac12eb3ea}{buffer}
+\item 
+void $\ast$ \hyperlink{structVX__camera_af16b6d657c8c9f9c27764c5c6d923855}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure representing camera in raytracing model. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__camera_ab99ed3683f52574a5a6dfadac12eb3ea}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!buffer@{buffer}}
+\index{buffer@{buffer}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-fpoint3}$\ast$ V\-X\-\_\-camera\-::buffer}}\label{structVX__camera_ab99ed3683f52574a5a6dfadac12eb3ea}
+Commonly used buffer for storing rays used by rg function \hypertarget{structVX__camera_af16b6d657c8c9f9c27764c5c6d923855}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!data@{data}}
+\index{data@{data}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ V\-X\-\_\-camera\-::data}}\label{structVX__camera_af16b6d657c8c9f9c27764c5c6d923855}
+Other user data \hypertarget{structVX__camera_a507391328f61922afd6369562947e7a8}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!destroy@{destroy}}
+\index{destroy@{destroy}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-camera\-::destroy)(struct {\bf V\-X\-\_\-camera} $\ast$self)}}\label{structVX__camera_a507391328f61922afd6369562947e7a8}
+Frees camera object. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__camera_ac0a8d4af706ab244df474fa60776d30b}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!draw@{draw}}
+\index{draw@{draw}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-camera\-::draw)(struct {\bf V\-X\-\_\-camera} $\ast$self, void $\ast$model)}}\label{structVX__camera_ac0a8d4af706ab244df474fa60776d30b}
+Runs raytracing for camera on model. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em model} & model to run raytracing on \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__camera_a60724e5c89d5b3f4b860feef5bd48dd5}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!position@{position}}
+\index{position@{position}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-ipoint3} V\-X\-\_\-camera\-::position}}\label{structVX__camera_a60724e5c89d5b3f4b860feef5bd48dd5}
+holds position of camera \hypertarget{structVX__camera_a6119ed12afba4631610196a7989fb7cf}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!rg@{rg}}
+\index{rg@{rg}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{rg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-fpoint3}($\ast$ V\-X\-\_\-camera\-::rg)(struct {\bf V\-X\-\_\-camera} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y)}}\label{structVX__camera_a6119ed12afba4631610196a7989fb7cf}
+Function that generates rays for given x and y coordinates 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em x} & x-\/position of camera \\
+\hline
+{\em y} & y-\/position of camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+transformed \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} by rotation matrix for $<$x,y$>$ point. 
+\end{DoxyReturn}
+\hypertarget{structVX__camera_ad367620c428520c36d2a53f4c2db458b}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!rotation\-\_\-matrix@{rotation\-\_\-matrix}}
+\index{rotation\-\_\-matrix@{rotation\-\_\-matrix}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{rotation\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}double V\-X\-\_\-camera\-::rotation\-\_\-matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}}\label{structVX__camera_ad367620c428520c36d2a53f4c2db458b}
+stores 4x4 viewing matrix, last row and column should be 0 \hypertarget{structVX__camera_add16fec4e751e381a855f9ab311a7873}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!surface@{surface}}
+\index{surface@{surface}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{surface}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-surface}$\ast$ V\-X\-\_\-camera\-::surface}}\label{structVX__camera_add16fec4e751e381a855f9ab311a7873}
+surface output surface -\/ framebuffer (read\-\_\-only) \hypertarget{structVX__camera_a6162d4618d183193b6da7a3d7bfa573b}{\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!workers@{workers}}
+\index{workers@{workers}!VX_camera@{V\-X\-\_\-camera}}
+\subsubsection[{workers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-field}$\ast$ V\-X\-\_\-camera\-::workers}}\label{structVX__camera_a6162d4618d183193b6da7a3d7bfa573b}
+thread object \hyperlink{structVX__field}{V\-X\-\_\-field} (read\-\_\-only) 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{camera_8h}{camera.\-h}\end{DoxyCompactItemize}

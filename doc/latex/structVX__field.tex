@@ -1,0 +1,65 @@
+\hypertarget{structVX__field}{\section{V\-X\-\_\-field Struct Reference}
+\label{structVX__field}\index{V\-X\-\_\-field@{V\-X\-\_\-field}}
+}
+
+
+{\ttfamily \#include $<$peasant.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structVX__field_aabbf8f87f0599a512d81954691d10a1e}{peasants\-\_\-count}
+\item 
+int \hyperlink{structVX__field_aadc61b8bd336815e43cc25babdb0b6d1}{destroy\-\_\-p}
+\item 
+pthread\-\_\-t $\ast$ \hyperlink{structVX__field_a50a4a8795f8bc85dae98a3ef413f493a}{t}
+\item 
+\hyperlink{structVX__peasant}{V\-X\-\_\-peasant} $\ast$ \hyperlink{structVX__field_a9d3d1235edb09fba04688449f8a880c0}{workers}
+\item 
+void($\ast$ \hyperlink{structVX__field_ac756ab3ee46139af68db93921e21d404}{enter} )(struct \hyperlink{structVX__field}{V\-X\-\_\-field} $\ast$, void $\ast$$\ast$params, void($\ast$funcs\mbox{[}$\,$\mbox{]})(void $\ast$))
+\item 
+void($\ast$ \hyperlink{structVX__field_a97d0409224ba04e9ec538147d5b90638}{destroy} )(struct \hyperlink{structVX__field}{V\-X\-\_\-field} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure holding set of threads 
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__field_a97d0409224ba04e9ec538147d5b90638}{\index{V\-X\-\_\-field@{V\-X\-\_\-field}!destroy@{destroy}}
+\index{destroy@{destroy}!VX_field@{V\-X\-\_\-field}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-field\-::destroy)(struct {\bf V\-X\-\_\-field} $\ast$)}}\label{structVX__field_a97d0409224ba04e9ec538147d5b90638}
+Standard destructor of \hyperlink{structVX__field}{V\-X\-\_\-field}, stops all threads and frees them 
+\begin{DoxyParams}{Parameters}
+{\em self} & analogy to this pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__field_aadc61b8bd336815e43cc25babdb0b6d1}{\index{V\-X\-\_\-field@{V\-X\-\_\-field}!destroy\-\_\-p@{destroy\-\_\-p}}
+\index{destroy\-\_\-p@{destroy\-\_\-p}!VX_field@{V\-X\-\_\-field}}
+\subsubsection[{destroy\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-field\-::destroy\-\_\-p}}\label{structVX__field_aadc61b8bd336815e43cc25babdb0b6d1}
+is private and should not be changed \hypertarget{structVX__field_ac756ab3ee46139af68db93921e21d404}{\index{V\-X\-\_\-field@{V\-X\-\_\-field}!enter@{enter}}
+\index{enter@{enter}!VX_field@{V\-X\-\_\-field}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-field\-::enter)(struct {\bf V\-X\-\_\-field} $\ast$, void $\ast$$\ast$params, void($\ast$funcs\mbox{[}$\,$\mbox{]})(void $\ast$))}}\label{structVX__field_ac756ab3ee46139af68db93921e21d404}
+Executes all threads, this call blocks calling thread until done 
+\begin{DoxyParams}{Parameters}
+{\em self} & this pointer analogy \\
+\hline
+{\em params} & array of parameters, must be same the same size as peasants\-\_\-count \\
+\hline
+{\em funcs} & array of functions, that returns void and takes one void$\ast$ parameter \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__field_aabbf8f87f0599a512d81954691d10a1e}{\index{V\-X\-\_\-field@{V\-X\-\_\-field}!peasants\-\_\-count@{peasants\-\_\-count}}
+\index{peasants\-\_\-count@{peasants\-\_\-count}!VX_field@{V\-X\-\_\-field}}
+\subsubsection[{peasants\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-field\-::peasants\-\_\-count}}\label{structVX__field_aabbf8f87f0599a512d81954691d10a1e}
+information about count of threads \hypertarget{structVX__field_a50a4a8795f8bc85dae98a3ef413f493a}{\index{V\-X\-\_\-field@{V\-X\-\_\-field}!t@{t}}
+\index{t@{t}!VX_field@{V\-X\-\_\-field}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-t$\ast$ V\-X\-\_\-field\-::t}}\label{structVX__field_a50a4a8795f8bc85dae98a3ef413f493a}
+is array of threads and should not be changed \hypertarget{structVX__field_a9d3d1235edb09fba04688449f8a880c0}{\index{V\-X\-\_\-field@{V\-X\-\_\-field}!workers@{workers}}
+\index{workers@{workers}!VX_field@{V\-X\-\_\-field}}
+\subsubsection[{workers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-peasant}$\ast$ V\-X\-\_\-field\-::workers}}\label{structVX__field_a9d3d1235edb09fba04688449f8a880c0}
+workers array of threads, should not be changed 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{peasant_8h}{peasant.\-h}\end{DoxyCompactItemize}

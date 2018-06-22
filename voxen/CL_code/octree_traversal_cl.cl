@@ -1,0 +1,1 @@
+/* This is stub implementation of octree traversal in OpenCL */

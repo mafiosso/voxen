@@ -1,0 +1,668 @@
+\hypertarget{vx__fundamental_8h}{\section{vx\-\_\-fundamental.\-h File Reference}
+\label{vx__fundamental_8h}\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__rect}{V\-X\-\_\-rect}
+\item 
+struct \hyperlink{structVX__cube}{V\-X\-\_\-cube}
+\item 
+struct \hyperlink{structVX__block}{V\-X\-\_\-block}
+\item 
+struct \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block}
+\item 
+struct \hyperlink{structVX__ipoint2}{V\-X\-\_\-ipoint2}
+\item 
+struct \hyperlink{structVX__iline2}{V\-X\-\_\-iline2}
+\item 
+struct \hyperlink{structVX__ipoint3}{V\-X\-\_\-ipoint3}
+\item 
+struct \hyperlink{structVX__fpoint2}{V\-X\-\_\-fpoint2}
+\item 
+struct \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3}
+\item 
+struct \hyperlink{structVX__iline3}{V\-X\-\_\-iline3}
+\item 
+struct \hyperlink{structVX__fline3}{V\-X\-\_\-fline3}
+\item 
+struct \hyperlink{structVX__dpoint2}{V\-X\-\_\-dpoint2}
+\item 
+struct \hyperlink{structVX__dpoint3}{V\-X\-\_\-dpoint3}
+\item 
+struct \hyperlink{structVX__dline3}{V\-X\-\_\-dline3}
+\item 
+struct \hyperlink{structVX__format}{V\-X\-\_\-format}
+\item 
+struct \hyperlink{structVX__surface}{V\-X\-\_\-surface}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{vx__fundamental_8h_a9e821e75b1286090f6f485da8f92ad8f}{\#define {\bfseries F\-A\-S\-T\-\_\-\-A\-N\-D}~\&}\label{vx__fundamental_8h_a9e821e75b1286090f6f485da8f92ad8f}
+
+\item 
+\hypertarget{vx__fundamental_8h_a1596d5f61db70ff6e1f14989fb62704f}{\#define {\bfseries F\-A\-S\-T\-\_\-\-O\-R}~$|$}\label{vx__fundamental_8h_a1596d5f61db70ff6e1f14989fb62704f}
+
+\item 
+\#define \hyperlink{vx__fundamental_8h_a598a3330b3c21701223ee0ca14316eca}{P\-I}~3.\-14159265
+\item 
+\#define \hyperlink{vx__fundamental_8h_a52c0864c08fc3defc9920978f75c0529}{P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3}(\hyperlink{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{X})~\{printf(\char`\"{}p( \%f , \%f , \%f )\textbackslash{}n\char`\"{} , (float)X.\-x ,(float)X.\-y,(float)X.\-z );\}
+\item 
+\#define \hyperlink{vx__fundamental_8h_adb0d12d2480e202c81d211d7bc91bfb5}{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3}(P)~\{printf(\char`\"{}p\-\_\-raw( \%i , \%i , \%i )\textbackslash{}n\char`\"{} , P\mbox{[}\hyperlink{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{X}\mbox{]} , P\mbox{[}\hyperlink{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}\mbox{]}, P\mbox{[}\hyperlink{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}\mbox{]} );\}
+\item 
+\#define \hyperlink{vx__fundamental_8h_af7f8d1c26f404dc6216de7ec7ee5d3db}{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3}(P)~\{printf(\char`\"{}p\-\_\-raw( \%f , \%f , \%f )\textbackslash{}n\char`\"{} , P\mbox{[}\hyperlink{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{X}\mbox{]} , P\mbox{[}\hyperlink{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}\mbox{]}, P\mbox{[}\hyperlink{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}\mbox{]} );\}
+\item 
+\#define \hyperlink{vx__fundamental_8h_ab02e028e2fa7fdcd88868ad6a89b35a0}{P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}(\hyperlink{vx__fundamental_8h_a111da81ae5883147168bbb8366377b10}{B})~\{printf(\char`\"{}ms\-\_\-block( \%d , \%d , \%d , \%d , \%d , \%d )\textbackslash{}n\char`\"{} , B.\-x1 , B.\-y1 , B.\-z1 , B.\-x2 , B.\-y2 , B.\-z2 );\}
+\item 
+\#define \hyperlink{vx__fundamental_8h_ab9179b44697be4de1802e18207ca07a3}{P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K}(\hyperlink{vx__fundamental_8h_a111da81ae5883147168bbb8366377b10}{B})~\{printf(\char`\"{}block( \%d , \%d , \%d , \%d , \%d , \%d )\textbackslash{}n\char`\"{} , B.\-x , B.\-y , B.\-z , B.\-w , B.\-h , B.\-d );\}
+\item 
+\#define \hyperlink{vx__fundamental_8h_a7d254afca27df1b951db380692b5c5ea}{B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}(B\-O\-X)~(\hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block})\{ B\-O\-X.\-x, B\-O\-X.\-y, B\-O\-X.\-z , B\-O\-X.\-x + B\-O\-X.\-w , B\-O\-X.\-y + B\-O\-X.\-h , B\-O\-X.\-z + B\-O\-X.\-d \}
+\item 
+\#define \hyperlink{vx__fundamental_8h_af1745db70a89b3b45c377cbd711aa5ff}{M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X}(B\-L\-O)~(\hyperlink{structVX__block}{V\-X\-\_\-block})\{ B\-L\-O.\-x1 , B\-L\-O.\-y1 , B\-L\-O.\-z1 , B\-L\-O.\-x2 -\/ B\-L\-O.\-x1 , B\-L\-O.\-y2 -\/ B\-L\-O.\-y1 , B\-L\-O.\-z2 -\/ B\-L\-O.\-z1 \}
+\item 
+\#define \hyperlink{vx__fundamental_8h_a01dd8c985f8d093bd685be1b121f1a20}{P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E}(C)~\{ printf(\char`\"{}cube( \%d , \%d , \%d , .w = \%d )\textbackslash{}n\char`\"{} , C.\-x , C.\-y , C.\-z , C.\-w ); \}
+\item 
+\#define \hyperlink{vx__fundamental_8h_a91b0bb4780a8a415c006cdcc7e89f307}{C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}(I\-N\-S\-I\-D\-E\-\_\-\-P, L\-E\-F\-T, R\-I\-G\-H\-T)~(I\-N\-S\-I\-D\-E\-\_\-\-P $<$= R\-I\-G\-H\-T \&\& I\-N\-S\-I\-D\-E\-\_\-\-P $>$= L\-E\-F\-T)
+\item 
+\#define \hyperlink{vx__fundamental_8h_ae05befa8eddb32114250c4c7ef66f4d6}{A\-P\-P\-L\-Y3}(lvar, rvar, op)
+\item 
+\#define {\bfseries C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T}(a, b, c)
+\item 
+\#define \hyperlink{vx__fundamental_8h_ace7acf1042dd41ca86973ede64184e6d}{M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E}~0x80000000
+\item 
+\hypertarget{vx__fundamental_8h_a05df5a5a57bf236b346a244ef99be199}{\#define {\bfseries V\-X\-\_\-int32}~int32\-\_\-t}\label{vx__fundamental_8h_a05df5a5a57bf236b346a244ef99be199}
+
+\item 
+\hypertarget{vx__fundamental_8h_ab8a69a5714a8b05cfa7e53accbd93c91}{\#define {\bfseries V\-X\-\_\-int16}~int16\-\_\-t}\label{vx__fundamental_8h_ab8a69a5714a8b05cfa7e53accbd93c91}
+
+\item 
+\hypertarget{vx__fundamental_8h_a4cf601a3bdad5f7c88d0a079bcb0c148}{\#define {\bfseries V\-X\-\_\-byte}~uint8\-\_\-t}\label{vx__fundamental_8h_a4cf601a3bdad5f7c88d0a079bcb0c148}
+
+\item 
+\hypertarget{vx__fundamental_8h_a6daa641673d4eb8d4533a1cc6800b4a0}{\#define {\bfseries V\-X\-\_\-uint32}~uint32\-\_\-t}\label{vx__fundamental_8h_a6daa641673d4eb8d4533a1cc6800b4a0}
+
+\item 
+\hypertarget{vx__fundamental_8h_ad0fe431f148386f25811bca3a3a6d2ad}{\#define {\bfseries V\-X\-\_\-uint64}~uint64\-\_\-t}\label{vx__fundamental_8h_ad0fe431f148386f25811bca3a3a6d2ad}
+
+\item 
+\#define \hyperlink{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{X}~0
+\item 
+\#define \hyperlink{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}~1
+\item 
+\#define \hyperlink{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}~2
+\item 
+\#define \hyperlink{vx__fundamental_8h_a955f504eccf76b4eb2489c0adab03121}{A}~3
+\item 
+\#define \hyperlink{vx__fundamental_8h_a5c71a5e59a53413cd6c270266d63b031}{R}~2
+\item 
+\#define \hyperlink{vx__fundamental_8h_aed9ea78689ecce0b7264c02c7f8a9a54}{G}~1
+\item 
+\#define \hyperlink{vx__fundamental_8h_a111da81ae5883147168bbb8366377b10}{B}~0
+\item 
+\#define \hyperlink{vx__fundamental_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{M\-A\-X}(x, y)~(x $>$ y ? x \-: y)
+\item 
+\#define \hyperlink{vx__fundamental_8h_a74e75242132eaabbc1c512488a135926}{M\-I\-N}(x, y)~(x $<$ y ? x \-: y)
+\item 
+\#define \hyperlink{vx__fundamental_8h_ad49f42b541fab6dcc14c0db107e24216}{F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M}(N)~($\ast$((V\-X\-\_\-uint32$\ast$)((void$\ast$)\&N)) \& (0x1 $<$$<$ 31))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structVX__rect}{V\-X\-\_\-rect} \hyperlink{vx__fundamental_8h_ac2304566df08f2c89cb97b24482e0efd}{V\-X\-\_\-rect}
+\item 
+typedef struct \hyperlink{structVX__cube}{V\-X\-\_\-cube} \hyperlink{vx__fundamental_8h_a17ea3ceaf034fe82eae2866c2557ba9e}{V\-X\-\_\-cube}
+\item 
+typedef struct \hyperlink{structVX__block}{V\-X\-\_\-block} \hyperlink{vx__fundamental_8h_aa1bbf4ef6b3869f6f40028d0262db1ff}{V\-X\-\_\-block}
+\item 
+typedef struct \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \hyperlink{vx__fundamental_8h_ab06287b4326696ef8c9bf823374cc4bd}{V\-X\-\_\-ms\-\_\-block}
+\item 
+typedef struct \hyperlink{structVX__ipoint2}{V\-X\-\_\-ipoint2} \hyperlink{vx__fundamental_8h_a8bfb9effb4978aac3f50c671ee82e2d4}{V\-X\-\_\-ipoint2}
+\item 
+typedef struct \hyperlink{structVX__iline2}{V\-X\-\_\-iline2} \hyperlink{vx__fundamental_8h_a399db3bc2df73aa57a67831d054fe644}{V\-X\-\_\-iline2}
+\item 
+typedef struct \hyperlink{structVX__ipoint3}{V\-X\-\_\-ipoint3} \hyperlink{vx__fundamental_8h_a1d1e7b16abea72acb65ca8f3677a0ce2}{V\-X\-\_\-ipoint3}
+\item 
+typedef struct \hyperlink{structVX__fpoint2}{V\-X\-\_\-fpoint2} \hyperlink{vx__fundamental_8h_a4e6272e892c99c529ad73a26ac7f663e}{V\-X\-\_\-fpoint2}
+\item 
+typedef struct \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} \hyperlink{vx__fundamental_8h_aaa218c73d9a4578515c69246d218ee1f}{V\-X\-\_\-fpoint3}
+\item 
+typedef struct \hyperlink{structVX__iline3}{V\-X\-\_\-iline3} \hyperlink{vx__fundamental_8h_a4ef177e1b1ec9bad7f934f7debcae9b3}{V\-X\-\_\-iline3}
+\item 
+typedef struct \hyperlink{structVX__fline3}{V\-X\-\_\-fline3} \hyperlink{vx__fundamental_8h_aa0a8e80975c1239cfe114455a9edbf0c}{V\-X\-\_\-fline3}
+\item 
+typedef struct \hyperlink{structVX__dpoint2}{V\-X\-\_\-dpoint2} \hyperlink{vx__fundamental_8h_a908e227cea2cb90af24b116471b78153}{V\-X\-\_\-dpoint2}
+\item 
+typedef struct \hyperlink{structVX__dpoint3}{V\-X\-\_\-dpoint3} \hyperlink{vx__fundamental_8h_a56da592b4c1f7b0a97d0d04721ac4b9f}{V\-X\-\_\-dpoint3}
+\item 
+typedef struct \hyperlink{structVX__dline3}{V\-X\-\_\-dline3} \hyperlink{vx__fundamental_8h_ab1c78335002ecae3251ae73b80b3c792}{V\-X\-\_\-dline3}
+\item 
+typedef struct \hyperlink{structVX__format}{V\-X\-\_\-format} \hyperlink{vx__fundamental_8h_acc76d728c57f8fe45c45c6942aeb39cd}{V\-X\-\_\-format}
+\item 
+typedef struct \hyperlink{structVX__surface}{V\-X\-\_\-surface} \hyperlink{vx__fundamental_8h_a5b9427babde3cc3127f6add136f5e160}{V\-X\-\_\-surface}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{vx__fundamental_8h_a71192ea3b84f748d7ee6eb9a05176e7d}{V\-X\-\_\-matrix4\-\_\-print} (double m\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{vx__fundamental_8h_a92dca8302ba948f1f5b57d166cca164c}{V\-X\-\_\-vector4\-\_\-print} (float v\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{vx__fundamental_8h_a038bd4fe7595f719919cc64df2e1895c}{V\-X\-\_\-fvector4\-\_\-multiply} (float outv\mbox{[}4\mbox{]}, double matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float vector\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{vx__fundamental_8h_ac9a93ba41c23f95b8bb7054462cc5093}{V\-X\-\_\-matrix4\-\_\-multiply} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double m1\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double m2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{vx__fundamental_8h_a41ee3c42cb6903e7a71ed9f054ca5c73}{V\-X\-\_\-matrix4\-\_\-add} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double m1\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double m2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{vx__fundamental_8h_a2c59ec9efe35abe785793daa0a5bf226}{V\-X\-\_\-matrix4\-\_\-identity} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{vx__fundamental_8h_ae16c01d087bb46f171d13676981f72ac}{V\-X\-\_\-matrix4\-\_\-xrotation} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double rad\-\_\-angle)
+\item 
+void \hyperlink{vx__fundamental_8h_a8087a526263784fbd6dd3fdce89bbf8b}{V\-X\-\_\-matrix4\-\_\-yrotation} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double rad\-\_\-angle)
+\item 
+void \hyperlink{vx__fundamental_8h_aba169e25c064863674dfbb16e3266fa8}{V\-X\-\_\-matrix4\-\_\-zrotation} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double rad\-\_\-angle)
+\item 
+double \hyperlink{vx__fundamental_8h_a6320e42d77d08720c1b1bf21396e1d9d}{rad\-\_\-to\-\_\-degrees} (double rad)
+\item 
+double \hyperlink{vx__fundamental_8h_a0fc4b3b84c4e04c678bc2653b3400d28}{deg\-\_\-to\-\_\-radians} (double deg)
+\item 
+V\-X\-\_\-uint32 \hyperlink{vx__fundamental_8h_ae7582d5897ccd80639482302452b527e}{nearest\-\_\-pow2} (V\-X\-\_\-uint32 a)
+\item 
+int \hyperlink{vx__fundamental_8h_acf02da4b44ae441603fd5d6b68752094}{V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p} (\hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b, \hyperlink{structVX__ipoint3}{V\-X\-\_\-ipoint3} p)
+\item 
+int \hyperlink{vx__fundamental_8h_abf5c42751069a262a74ff032848f6cf2}{V\-X\-\_\-cubes\-\_\-intersects\-\_\-p} (\hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b1, \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b2)
+\item 
+\hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \hyperlink{vx__fundamental_8h_a8b59cd52f4e17ecd3f26e118f7357240}{V\-X\-\_\-cubes\-\_\-intersection} (\hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b1, \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b2)
+\item 
+void \hyperlink{vx__fundamental_8h_a1750dda678ef12a51de694fad3cd6a8d}{fvector3\-\_\-raw\-\_\-normalize} (float v\mbox{[}3\mbox{]}, float len)
+\item 
+V\-X\-\_\-uint32 \hyperlink{vx__fundamental_8h_a1557fbc685cfdf3f0280fa2b85c3293e}{color\-\_\-add} (V\-X\-\_\-uint32 c1, V\-X\-\_\-uint32 c2)
+\item 
+V\-X\-\_\-uint32 \hyperlink{vx__fundamental_8h_a5f9f8f7589d0d9d383c1b16f96f74abc}{color\-\_\-mul} (V\-X\-\_\-uint32 c1, V\-X\-\_\-uint32 c2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vx__fundamental_8h_a955f504eccf76b4eb2489c0adab03121}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!A@{A}}
+\index{A@{A}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{A}]{\setlength{\rightskip}{0pt plus 5cm}\#define A~3}}\label{vx__fundamental_8h_a955f504eccf76b4eb2489c0adab03121}
+Index A in 4-\/item color array \hypertarget{vx__fundamental_8h_ae05befa8eddb32114250c4c7ef66f4d6}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!A\-P\-P\-L\-Y3@{A\-P\-P\-L\-Y3}}
+\index{A\-P\-P\-L\-Y3@{A\-P\-P\-L\-Y3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{A\-P\-P\-L\-Y3}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-P\-P\-L\-Y3(
+\begin{DoxyParamCaption}
+\item[{}]{lvar, }
+\item[{}]{rvar, }
+\item[{}]{op}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_ae05befa8eddb32114250c4c7ef66f4d6}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+lvar[\hyperlink{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{X}] op rvar[\hyperlink{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{X}]; lvar[\hyperlink{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}] op rvar[\hyperlink{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}]; lvar[\hyperlink{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}] op rvar[\hyperlink{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}]  \(\backslash\)
+                                                                \(\backslash\)
+\end{DoxyCode}
+Applies operation op on all items of 3-\/item array lvar and rvar \hypertarget{vx__fundamental_8h_a111da81ae5883147168bbb8366377b10}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!B@{B}}
+\index{B@{B}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{B}]{\setlength{\rightskip}{0pt plus 5cm}\#define B~0}}\label{vx__fundamental_8h_a111da81ae5883147168bbb8366377b10}
+Index B in 4-\/item color array \hypertarget{vx__fundamental_8h_a7d254afca27df1b951db380692b5c5ea}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K@{B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}}
+\index{B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K@{B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-O\-X\-\_\-\-T\-O\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{B\-O\-X}
+\end{DoxyParamCaption}
+)~({\bf V\-X\-\_\-ms\-\_\-block})\{ B\-O\-X.\-x, B\-O\-X.\-y, B\-O\-X.\-z , B\-O\-X.\-x + B\-O\-X.\-w , B\-O\-X.\-y + B\-O\-X.\-h , B\-O\-X.\-z + B\-O\-X.\-d \}}}\label{vx__fundamental_8h_a7d254afca27df1b951db380692b5c5ea}
+Conversion \hyperlink{structVX__block}{V\-X\-\_\-block} to \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block}. \hypertarget{vx__fundamental_8h_a91b0bb4780a8a415c006cdcc7e89f307}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L@{C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}}
+\index{C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L@{C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-H\-E\-C\-K\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{I\-N\-S\-I\-D\-E\-\_\-\-P, }
+\item[{}]{L\-E\-F\-T, }
+\item[{}]{R\-I\-G\-H\-T}
+\end{DoxyParamCaption}
+)~(I\-N\-S\-I\-D\-E\-\_\-\-P $<$= R\-I\-G\-H\-T \&\& I\-N\-S\-I\-D\-E\-\_\-\-P $>$= L\-E\-F\-T)}}\label{vx__fundamental_8h_a91b0bb4780a8a415c006cdcc7e89f307}
+Checking if I\-N\-S\-I\-D\-E\-\_\-\-P lies inside interval \mbox{[}L\-E\-F\-T,R\-I\-G\-H\-T\mbox{]} \hypertarget{vx__fundamental_8h_aadda72b7f0a43dc8eb5a310313c402ef}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T@{C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T}}
+\index{C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T@{C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-R\-O\-S\-S\-\_\-\-P\-R\-O\-D\-U\-C\-T(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_aadda72b7f0a43dc8eb5a310313c402ef}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+(a)[0] = (b)[1] * (c)[2] - (c)[1] * (b)[2];     \(\backslash\)
+       (a)[1] = (b)[2] * (c)[0] - (c)[2] * (b)[0];  \(\backslash\)
+       (a)[2] = (b)[0] * (c)[1] - (c)[0] * (b)[1];  \(\backslash\)
+\end{DoxyCode}
+\hypertarget{vx__fundamental_8h_ad49f42b541fab6dcc14c0db107e24216}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M@{F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M}}
+\index{F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M@{F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-L\-O\-A\-T\-\_\-\-S\-I\-G\-N\-U\-M(
+\begin{DoxyParamCaption}
+\item[{}]{N}
+\end{DoxyParamCaption}
+)~($\ast$((V\-X\-\_\-uint32$\ast$)((void$\ast$)\&N)) \& (0x1 $<$$<$ 31))}}\label{vx__fundamental_8h_ad49f42b541fab6dcc14c0db107e24216}
+Faster signum by using type punning -\/ returns 1 $<$$<$ 31 if N is negative 0 otherwise. \hypertarget{vx__fundamental_8h_aed9ea78689ecce0b7264c02c7f8a9a54}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!G@{G}}
+\index{G@{G}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{G}]{\setlength{\rightskip}{0pt plus 5cm}\#define G~1}}\label{vx__fundamental_8h_aed9ea78689ecce0b7264c02c7f8a9a54}
+Index G in 4-\/item color array \hypertarget{vx__fundamental_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!M\-A\-X@{M\-A\-X}}
+\index{M\-A\-X@{M\-A\-X}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~(x $>$ y ? x \-: y)}}\label{vx__fundamental_8h_aacc3ee1a7f283f8ef65cea31f4436a95}
+Maximum macro. \hypertarget{vx__fundamental_8h_ace7acf1042dd41ca86973ede64184e6d}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E@{M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E}}
+\index{M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E@{M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-A\-L\-L\-O\-C\-A\-B\-L\-E~0x80000000}}\label{vx__fundamental_8h_ace7acf1042dd41ca86973ede64184e6d}
+Constant of maximal allocable bytes -\/ 3\-G\-B \hypertarget{vx__fundamental_8h_a74e75242132eaabbc1c512488a135926}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!M\-I\-N@{M\-I\-N}}
+\index{M\-I\-N@{M\-I\-N}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{M\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-N(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~(x $<$ y ? x \-: y)}}\label{vx__fundamental_8h_a74e75242132eaabbc1c512488a135926}
+Minimum macro. \hypertarget{vx__fundamental_8h_af1745db70a89b3b45c377cbd711aa5ff}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X@{M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X}}
+\index{M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X@{M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-S\-\_\-\-B\-L\-O\-C\-K\-\_\-\-T\-O\-\_\-\-B\-O\-X(
+\begin{DoxyParamCaption}
+\item[{}]{B\-L\-O}
+\end{DoxyParamCaption}
+)~({\bf V\-X\-\_\-block})\{ B\-L\-O.\-x1 , B\-L\-O.\-y1 , B\-L\-O.\-z1 , B\-L\-O.\-x2 -\/ B\-L\-O.\-x1 , B\-L\-O.\-y2 -\/ B\-L\-O.\-y1 , B\-L\-O.\-z2 -\/ B\-L\-O.\-z1 \}}}\label{vx__fundamental_8h_af1745db70a89b3b45c377cbd711aa5ff}
+Conversion \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} to \hyperlink{structVX__block}{V\-X\-\_\-block}. \hypertarget{vx__fundamental_8h_a598a3330b3c21701223ee0ca14316eca}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-I@{P\-I}}
+\index{P\-I@{P\-I}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-I~3.\-14159265}}\label{vx__fundamental_8h_a598a3330b3c21701223ee0ca14316eca}
+Ludolf constant. \hypertarget{vx__fundamental_8h_ab9179b44697be4de1802e18207ca07a3}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K@{P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K}}
+\index{P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K@{P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-I\-N\-T\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf B}}
+\end{DoxyParamCaption}
+)~\{printf(\char`\"{}block( \%d , \%d , \%d , \%d , \%d , \%d )\textbackslash{}n\char`\"{} , B.\-x , B.\-y , B.\-z , B.\-w , B.\-h , B.\-d );\}}}\label{vx__fundamental_8h_ab9179b44697be4de1802e18207ca07a3}
+Print a \hyperlink{structVX__block}{V\-X\-\_\-block} structure. \hypertarget{vx__fundamental_8h_a01dd8c985f8d093bd685be1b121f1a20}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E@{P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E}}
+\index{P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E@{P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-I\-N\-T\-\_\-\-C\-U\-B\-E(
+\begin{DoxyParamCaption}
+\item[{}]{C}
+\end{DoxyParamCaption}
+)~\{ printf(\char`\"{}cube( \%d , \%d , \%d , .w = \%d )\textbackslash{}n\char`\"{} , C.\-x , C.\-y , C.\-z , C.\-w ); \}}}\label{vx__fundamental_8h_a01dd8c985f8d093bd685be1b121f1a20}
+Print \hyperlink{structVX__cube}{V\-X\-\_\-cube} structure. \hypertarget{vx__fundamental_8h_ab02e028e2fa7fdcd88868ad6a89b35a0}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K@{P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}}
+\index{P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K@{P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-I\-N\-T\-\_\-\-M\-S\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf B}}
+\end{DoxyParamCaption}
+)~\{printf(\char`\"{}ms\-\_\-block( \%d , \%d , \%d , \%d , \%d , \%d )\textbackslash{}n\char`\"{} , B.\-x1 , B.\-y1 , B.\-z1 , B.\-x2 , B.\-y2 , B.\-z2 );\}}}\label{vx__fundamental_8h_ab02e028e2fa7fdcd88868ad6a89b35a0}
+Print a \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} structure. \hypertarget{vx__fundamental_8h_a52c0864c08fc3defc9920978f75c0529}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3@{P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3}}
+\index{P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3@{P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-I\-N\-T\-\_\-\-P\-O\-I\-N\-T3(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf X}}
+\end{DoxyParamCaption}
+)~\{printf(\char`\"{}p( \%f , \%f , \%f )\textbackslash{}n\char`\"{} , (float)X.\-x ,(float)X.\-y,(float)X.\-z );\}}}\label{vx__fundamental_8h_a52c0864c08fc3defc9920978f75c0529}
+Print \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3}. \hypertarget{vx__fundamental_8h_af7f8d1c26f404dc6216de7ec7ee5d3db}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3@{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3}}
+\index{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3@{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-F\-P\-O\-I\-N\-T3(
+\begin{DoxyParamCaption}
+\item[{}]{P}
+\end{DoxyParamCaption}
+)~\{printf(\char`\"{}p\-\_\-raw( \%f , \%f , \%f )\textbackslash{}n\char`\"{} , P\mbox{[}{\bf X}\mbox{]} , P\mbox{[}{\bf Y}\mbox{]}, P\mbox{[}{\bf Z}\mbox{]} );\}}}\label{vx__fundamental_8h_af7f8d1c26f404dc6216de7ec7ee5d3db}
+Print array of 3 floats. \hypertarget{vx__fundamental_8h_adb0d12d2480e202c81d211d7bc91bfb5}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3@{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3}}
+\index{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3@{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-I\-N\-T\-\_\-\-R\-A\-W\-\_\-\-P\-O\-I\-N\-T3(
+\begin{DoxyParamCaption}
+\item[{}]{P}
+\end{DoxyParamCaption}
+)~\{printf(\char`\"{}p\-\_\-raw( \%i , \%i , \%i )\textbackslash{}n\char`\"{} , P\mbox{[}{\bf X}\mbox{]} , P\mbox{[}{\bf Y}\mbox{]}, P\mbox{[}{\bf Z}\mbox{]} );\}}}\label{vx__fundamental_8h_adb0d12d2480e202c81d211d7bc91bfb5}
+Print array of 3 integers. \hypertarget{vx__fundamental_8h_a5c71a5e59a53413cd6c270266d63b031}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!R@{R}}
+\index{R@{R}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{R}]{\setlength{\rightskip}{0pt plus 5cm}\#define R~2}}\label{vx__fundamental_8h_a5c71a5e59a53413cd6c270266d63b031}
+Index R in 4-\/item color array \hypertarget{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!X@{X}}
+\index{X@{X}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}\#define X~0}}\label{vx__fundamental_8h_a207fd5507206d307cd63f95374fcd00d}
+Index X in 3-\/item vector array \hypertarget{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!Y@{Y}}
+\index{Y@{Y}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y~1}}\label{vx__fundamental_8h_a798e4073d613ca5ba9618e1b3253df14}
+Index Y in 3-\/item vector array \hypertarget{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!Z@{Z}}
+\index{Z@{Z}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z~2}}\label{vx__fundamental_8h_a51591cf51bdd6c1f6015532422e7770e}
+Index Z in 3-\/item vector array 
+
+\subsection{Typedef Documentation}
+\hypertarget{vx__fundamental_8h_aa1bbf4ef6b3869f6f40028d0262db1ff}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-block@{V\-X\-\_\-block}}
+\index{V\-X\-\_\-block@{V\-X\-\_\-block}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-block} {\bf V\-X\-\_\-block}}}\label{vx__fundamental_8h_aa1bbf4ef6b3869f6f40028d0262db1ff}
+Structure representing cube in 3\-D $<$x,y,z$>$ is left bottom near corner, $<$w,h,d$>$ is width, height and depth of cube. \hypertarget{vx__fundamental_8h_a17ea3ceaf034fe82eae2866c2557ba9e}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-cube@{V\-X\-\_\-cube}}
+\index{V\-X\-\_\-cube@{V\-X\-\_\-cube}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-cube}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-cube} {\bf V\-X\-\_\-cube}}}\label{vx__fundamental_8h_a17ea3ceaf034fe82eae2866c2557ba9e}
+Structure representing cube in 3\-D, $<$x,y,z$>$ is left bottom near corner, w is width. \hypertarget{vx__fundamental_8h_ab1c78335002ecae3251ae73b80b3c792}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-dline3@{V\-X\-\_\-dline3}}
+\index{V\-X\-\_\-dline3@{V\-X\-\_\-dline3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-dline3}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-dline3} {\bf V\-X\-\_\-dline3}}}\label{vx__fundamental_8h_ab1c78335002ecae3251ae73b80b3c792}
+Structure representing double line in 3\-D. \hypertarget{vx__fundamental_8h_a908e227cea2cb90af24b116471b78153}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-dpoint2@{V\-X\-\_\-dpoint2}}
+\index{V\-X\-\_\-dpoint2@{V\-X\-\_\-dpoint2}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-dpoint2}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-dpoint2} {\bf V\-X\-\_\-dpoint2}}}\label{vx__fundamental_8h_a908e227cea2cb90af24b116471b78153}
+Structure representing double point in 2\-D. \hypertarget{vx__fundamental_8h_a56da592b4c1f7b0a97d0d04721ac4b9f}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-dpoint3@{V\-X\-\_\-dpoint3}}
+\index{V\-X\-\_\-dpoint3@{V\-X\-\_\-dpoint3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-dpoint3}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-dpoint3} {\bf V\-X\-\_\-dpoint3}}}\label{vx__fundamental_8h_a56da592b4c1f7b0a97d0d04721ac4b9f}
+Structure representing double point in 3\-D. \hypertarget{vx__fundamental_8h_aa0a8e80975c1239cfe114455a9edbf0c}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-fline3@{V\-X\-\_\-fline3}}
+\index{V\-X\-\_\-fline3@{V\-X\-\_\-fline3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-fline3}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-fline3} {\bf V\-X\-\_\-fline3}}}\label{vx__fundamental_8h_aa0a8e80975c1239cfe114455a9edbf0c}
+Structure representing float line in 3\-D. \hypertarget{vx__fundamental_8h_acc76d728c57f8fe45c45c6942aeb39cd}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-format@{V\-X\-\_\-format}}
+\index{V\-X\-\_\-format@{V\-X\-\_\-format}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-format} {\bf V\-X\-\_\-format}}}\label{vx__fundamental_8h_acc76d728c57f8fe45c45c6942aeb39cd}
+Structure representing color format. \hypertarget{vx__fundamental_8h_a4e6272e892c99c529ad73a26ac7f663e}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-fpoint2@{V\-X\-\_\-fpoint2}}
+\index{V\-X\-\_\-fpoint2@{V\-X\-\_\-fpoint2}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-fpoint2}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-fpoint2} {\bf V\-X\-\_\-fpoint2}}}\label{vx__fundamental_8h_a4e6272e892c99c529ad73a26ac7f663e}
+Structure representing float point in 2\-D. \hypertarget{vx__fundamental_8h_aaa218c73d9a4578515c69246d218ee1f}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-fpoint3@{V\-X\-\_\-fpoint3}}
+\index{V\-X\-\_\-fpoint3@{V\-X\-\_\-fpoint3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-fpoint3}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-fpoint3} {\bf V\-X\-\_\-fpoint3}}}\label{vx__fundamental_8h_aaa218c73d9a4578515c69246d218ee1f}
+Structure representing float point in 3\-D. \hypertarget{vx__fundamental_8h_a399db3bc2df73aa57a67831d054fe644}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-iline2@{V\-X\-\_\-iline2}}
+\index{V\-X\-\_\-iline2@{V\-X\-\_\-iline2}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-iline2}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-iline2} {\bf V\-X\-\_\-iline2}}}\label{vx__fundamental_8h_a399db3bc2df73aa57a67831d054fe644}
+Structure representing integer line in 2\-D. \hypertarget{vx__fundamental_8h_a4ef177e1b1ec9bad7f934f7debcae9b3}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-iline3@{V\-X\-\_\-iline3}}
+\index{V\-X\-\_\-iline3@{V\-X\-\_\-iline3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-iline3}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-iline3} {\bf V\-X\-\_\-iline3}}}\label{vx__fundamental_8h_a4ef177e1b1ec9bad7f934f7debcae9b3}
+Structure representing integer line in 3\-D. \hypertarget{vx__fundamental_8h_a8bfb9effb4978aac3f50c671ee82e2d4}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-ipoint2@{V\-X\-\_\-ipoint2}}
+\index{V\-X\-\_\-ipoint2@{V\-X\-\_\-ipoint2}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-ipoint2}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-ipoint2} {\bf V\-X\-\_\-ipoint2}}}\label{vx__fundamental_8h_a8bfb9effb4978aac3f50c671ee82e2d4}
+Structure representing integer point in 2\-D. \hypertarget{vx__fundamental_8h_a1d1e7b16abea72acb65ca8f3677a0ce2}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-ipoint3@{V\-X\-\_\-ipoint3}}
+\index{V\-X\-\_\-ipoint3@{V\-X\-\_\-ipoint3}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-ipoint3}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-ipoint3} {\bf V\-X\-\_\-ipoint3}}}\label{vx__fundamental_8h_a1d1e7b16abea72acb65ca8f3677a0ce2}
+Structure representing integer point in 3\-D. \hypertarget{vx__fundamental_8h_ab06287b4326696ef8c9bf823374cc4bd}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-ms\-\_\-block@{V\-X\-\_\-ms\-\_\-block}}
+\index{V\-X\-\_\-ms\-\_\-block@{V\-X\-\_\-ms\-\_\-block}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-ms\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-ms\-\_\-block} {\bf V\-X\-\_\-ms\-\_\-block}}}\label{vx__fundamental_8h_ab06287b4326696ef8c9bf823374cc4bd}
+Structure representing block in 3\-D in Microsoft way (like R\-E\-C\-T from Win\-A\-P\-I) $<$x1,y1,z1$>$ is minimal corner and $<$x2,y2,z2$>$ is maximal corner. \hypertarget{vx__fundamental_8h_ac2304566df08f2c89cb97b24482e0efd}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-rect@{V\-X\-\_\-rect}}
+\index{V\-X\-\_\-rect@{V\-X\-\_\-rect}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-rect} {\bf V\-X\-\_\-rect}}}\label{vx__fundamental_8h_ac2304566df08f2c89cb97b24482e0efd}
+Structure representing a 2\-D rectangle, $<$x,y$>$ is left-\/top corner and w is width and h is height. \hypertarget{vx__fundamental_8h_a5b9427babde3cc3127f6add136f5e160}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-surface@{V\-X\-\_\-surface}}
+\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-surface}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-surface} {\bf V\-X\-\_\-surface}}}\label{vx__fundamental_8h_a5b9427babde3cc3127f6add136f5e160}
+2\-D surface device independent interface. 
+
+\subsection{Function Documentation}
+\hypertarget{vx__fundamental_8h_a1557fbc685cfdf3f0280fa2b85c3293e}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!color\-\_\-add@{color\-\_\-add}}
+\index{color\-\_\-add@{color\-\_\-add}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{color\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 color\-\_\-add (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{c1, }
+\item[{V\-X\-\_\-uint32}]{c2}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a1557fbc685cfdf3f0280fa2b85c3293e}
+Adds two A\-R\-G\-B32 colors together by components, values are checked for not to overlap 255. 
+\begin{DoxyParams}{Parameters}
+{\em c1} & A\-R\-G\-B32 color \\
+\hline
+{\em c2} & A\-R\-G\-B32 color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\-R\-G\-B32 color created by adition c1 and c2. 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a5f9f8f7589d0d9d383c1b16f96f74abc}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!color\-\_\-mul@{color\-\_\-mul}}
+\index{color\-\_\-mul@{color\-\_\-mul}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{color\-\_\-mul}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 color\-\_\-mul (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{c1, }
+\item[{V\-X\-\_\-uint32}]{c2}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a5f9f8f7589d0d9d383c1b16f96f74abc}
+Multiplies two A\-R\-G\-B32 colors together by components, values never overlaps 255 due to modular arithmetics. 
+\begin{DoxyParams}{Parameters}
+{\em c1} & A\-R\-G\-B32 color \\
+\hline
+{\em c2} & A\-R\-G\-B32 color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\-R\-G\-B32 color created by adition c1 and c2. 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a0fc4b3b84c4e04c678bc2653b3400d28}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!deg\-\_\-to\-\_\-radians@{deg\-\_\-to\-\_\-radians}}
+\index{deg\-\_\-to\-\_\-radians@{deg\-\_\-to\-\_\-radians}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{deg\-\_\-to\-\_\-radians}]{\setlength{\rightskip}{0pt plus 5cm}double deg\-\_\-to\-\_\-radians (
+\begin{DoxyParamCaption}
+\item[{double}]{deg}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a0fc4b3b84c4e04c678bc2653b3400d28}
+Converts degrees to radians. 
+\begin{DoxyParams}{Parameters}
+{\em deg} & angle in degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+angle in radians 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a1750dda678ef12a51de694fad3cd6a8d}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!fvector3\-\_\-raw\-\_\-normalize@{fvector3\-\_\-raw\-\_\-normalize}}
+\index{fvector3\-\_\-raw\-\_\-normalize@{fvector3\-\_\-raw\-\_\-normalize}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{fvector3\-\_\-raw\-\_\-normalize}]{\setlength{\rightskip}{0pt plus 5cm}void fvector3\-\_\-raw\-\_\-normalize (
+\begin{DoxyParamCaption}
+\item[{float}]{v\mbox{[}3\mbox{]}, }
+\item[{float}]{len}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a1750dda678ef12a51de694fad3cd6a8d}
+Makes vector v of length len 
+\begin{DoxyParams}{Parameters}
+{\em input/output} & vector \\
+\hline
+{\em len} & needed length of vector (commonly 1.\-0f) \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_ae7582d5897ccd80639482302452b527e}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!nearest\-\_\-pow2@{nearest\-\_\-pow2}}
+\index{nearest\-\_\-pow2@{nearest\-\_\-pow2}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{nearest\-\_\-pow2}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 nearest\-\_\-pow2 (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{a}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_ae7582d5897ccd80639482302452b527e}
+Compute log\-\_\-2(a) in integer precision. 
+\begin{DoxyParams}{Parameters}
+{\em a} & an unsigned integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+log\-\_\-2(a) 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a6320e42d77d08720c1b1bf21396e1d9d}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!rad\-\_\-to\-\_\-degrees@{rad\-\_\-to\-\_\-degrees}}
+\index{rad\-\_\-to\-\_\-degrees@{rad\-\_\-to\-\_\-degrees}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{rad\-\_\-to\-\_\-degrees}]{\setlength{\rightskip}{0pt plus 5cm}double rad\-\_\-to\-\_\-degrees (
+\begin{DoxyParamCaption}
+\item[{double}]{rad}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a6320e42d77d08720c1b1bf21396e1d9d}
+Converts radians to degrees. 
+\begin{DoxyParams}{Parameters}
+{\em rad} & angle in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+angle in degrees 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a8b59cd52f4e17ecd3f26e118f7357240}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-cubes\-\_\-intersection@{V\-X\-\_\-cubes\-\_\-intersection}}
+\index{V\-X\-\_\-cubes\-\_\-intersection@{V\-X\-\_\-cubes\-\_\-intersection}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-cubes\-\_\-intersection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-ms\-\_\-block} V\-X\-\_\-cubes\-\_\-intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-ms\-\_\-block}}]{b1, }
+\item[{{\bf V\-X\-\_\-ms\-\_\-block}}]{b2}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a8b59cd52f4e17ecd3f26e118f7357240}
+Returns block of intersection between two blocks b1 and b2, blocks b1 and b2 must overlap. 
+\begin{DoxyParams}{Parameters}
+{\em b1} & a valid \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \\
+\hline
+{\em b2} & a valid \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+block of intersection between b1 and b2. 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_abf5c42751069a262a74ff032848f6cf2}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-cubes\-\_\-intersects\-\_\-p@{V\-X\-\_\-cubes\-\_\-intersects\-\_\-p}}
+\index{V\-X\-\_\-cubes\-\_\-intersects\-\_\-p@{V\-X\-\_\-cubes\-\_\-intersects\-\_\-p}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-cubes\-\_\-intersects\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-cubes\-\_\-intersects\-\_\-p (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-ms\-\_\-block}}]{b1, }
+\item[{{\bf V\-X\-\_\-ms\-\_\-block}}]{b2}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_abf5c42751069a262a74ff032848f6cf2}
+Test if two blocks b1 and b2 intersects. 
+\begin{DoxyParams}{Parameters}
+{\em b1} & valid \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \\
+\hline
+{\em b2} & valid \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if intersection occurs, 0 otherwise. 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a038bd4fe7595f719919cc64df2e1895c}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-fvector4\-\_\-multiply@{V\-X\-\_\-fvector4\-\_\-multiply}}
+\index{V\-X\-\_\-fvector4\-\_\-multiply@{V\-X\-\_\-fvector4\-\_\-multiply}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-fvector4\-\_\-multiply}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-fvector4\-\_\-multiply (
+\begin{DoxyParamCaption}
+\item[{float}]{outv\mbox{[}4\mbox{]}, }
+\item[{double}]{matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{float}]{vector\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a038bd4fe7595f719919cc64df2e1895c}
+Multiplies matrix matrix with vector, like this matrix$\ast$vector and stores output in outv. 
+\begin{DoxyParams}{Parameters}
+{\em outv} & output vector in format float\mbox{[}4\mbox{]} \\
+\hline
+{\em matrix} & matrix in format double\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} \\
+\hline
+{\em vector} & vector in format float\mbox{[}4\mbox{]} \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_a41ee3c42cb6903e7a71ed9f054ca5c73}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-add@{V\-X\-\_\-matrix4\-\_\-add}}
+\index{V\-X\-\_\-matrix4\-\_\-add@{V\-X\-\_\-matrix4\-\_\-add}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-add (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{m1\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{m2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a41ee3c42cb6903e7a71ed9f054ca5c73}
+Addition of two matrices m1 and m2 storing output to out addition is done in order out = m1 + m2. 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em m1} & left matrix \\
+\hline
+{\em m2} & right matrix \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_a2c59ec9efe35abe785793daa0a5bf226}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-identity@{V\-X\-\_\-matrix4\-\_\-identity}}
+\index{V\-X\-\_\-matrix4\-\_\-identity@{V\-X\-\_\-matrix4\-\_\-identity}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-identity}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-identity (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a2c59ec9efe35abe785793daa0a5bf226}
+Initialize matrix 4x4 out to identity matrix. 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_ac9a93ba41c23f95b8bb7054462cc5093}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-multiply@{V\-X\-\_\-matrix4\-\_\-multiply}}
+\index{V\-X\-\_\-matrix4\-\_\-multiply@{V\-X\-\_\-matrix4\-\_\-multiply}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-multiply}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-multiply (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{m1\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{m2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_ac9a93ba41c23f95b8bb7054462cc5093}
+Multiplication of two matrices m1 and m2 storing output to out multiplication is done in order out = m1 . m2. 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em m1} & left matrix \\
+\hline
+{\em m2} & right matrix \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_a71192ea3b84f748d7ee6eb9a05176e7d}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-print@{V\-X\-\_\-matrix4\-\_\-print}}
+\index{V\-X\-\_\-matrix4\-\_\-print@{V\-X\-\_\-matrix4\-\_\-print}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-print (
+\begin{DoxyParamCaption}
+\item[{double}]{m\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a71192ea3b84f748d7ee6eb9a05176e7d}
+Print matrix on stdout. 
+\begin{DoxyParams}{Parameters}
+{\em m} & matrix in format double\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_ae16c01d087bb46f171d13676981f72ac}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-xrotation@{V\-X\-\_\-matrix4\-\_\-xrotation}}
+\index{V\-X\-\_\-matrix4\-\_\-xrotation@{V\-X\-\_\-matrix4\-\_\-xrotation}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-xrotation}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-xrotation (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{rad\-\_\-angle}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_ae16c01d087bb46f171d13676981f72ac}
+Initialize matrix to a rotation matrix around x axis (left handed system). 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em rad\-\_\-angle} & angle of rotation in radians \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_a8087a526263784fbd6dd3fdce89bbf8b}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-yrotation@{V\-X\-\_\-matrix4\-\_\-yrotation}}
+\index{V\-X\-\_\-matrix4\-\_\-yrotation@{V\-X\-\_\-matrix4\-\_\-yrotation}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-yrotation}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-yrotation (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{rad\-\_\-angle}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a8087a526263784fbd6dd3fdce89bbf8b}
+Initialize matrix to a rotation matrix around y axis (left handed system). 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em rad\-\_\-angle} & angle of rotation in radians \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_aba169e25c064863674dfbb16e3266fa8}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-matrix4\-\_\-zrotation@{V\-X\-\_\-matrix4\-\_\-zrotation}}
+\index{V\-X\-\_\-matrix4\-\_\-zrotation@{V\-X\-\_\-matrix4\-\_\-zrotation}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-zrotation}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-zrotation (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{rad\-\_\-angle}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_aba169e25c064863674dfbb16e3266fa8}
+Initialize matrix to a rotation matrix around z axis (left handed system). 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em rad\-\_\-angle} & angle of rotation in radians \\
+\hline
+\end{DoxyParams}
+\hypertarget{vx__fundamental_8h_acf02da4b44ae441603fd5d6b68752094}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p@{V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p}}
+\index{V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p@{V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-point\-\_\-in\-\_\-cube\-\_\-p (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-ms\-\_\-block}}]{b, }
+\item[{{\bf V\-X\-\_\-ipoint3}}]{p}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_acf02da4b44ae441603fd5d6b68752094}
+Test if point p lies inside \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b. 
+\begin{DoxyParams}{Parameters}
+{\em b} & a valid \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} \\
+\hline
+{\em p} & integer point in 3\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if p lies inside b, 0 otherwise. 
+\end{DoxyReturn}
+\hypertarget{vx__fundamental_8h_a92dca8302ba948f1f5b57d166cca164c}{\index{vx\-\_\-fundamental.\-h@{vx\-\_\-fundamental.\-h}!V\-X\-\_\-vector4\-\_\-print@{V\-X\-\_\-vector4\-\_\-print}}
+\index{V\-X\-\_\-vector4\-\_\-print@{V\-X\-\_\-vector4\-\_\-print}!vx_fundamental.h@{vx\-\_\-fundamental.\-h}}
+\subsubsection[{V\-X\-\_\-vector4\-\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-vector4\-\_\-print (
+\begin{DoxyParamCaption}
+\item[{float}]{v\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{vx__fundamental_8h_a92dca8302ba948f1f5b57d166cca164c}
+Print vecotr on stdout. 
+\begin{DoxyParams}{Parameters}
+{\em v} & vector in format float\mbox{[}4\mbox{]} \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,85 @@
+\hypertarget{display_8h}{\section{display.\-h File Reference}
+\label{display_8h}\index{display.\-h@{display.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__machine}{V\-X\-\_\-machine}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{display_8h_ac0ce35eae20fc24a927f4896f175278c}{V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N}~0x1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{display_8h_ab2bc4baf4a98429883d616c36e46862b}{typedef struct \hyperlink{structVX__machine}{V\-X\-\_\-machine} {\bfseries V\-X\-\_\-machine}}\label{display_8h_ab2bc4baf4a98429883d616c36e46862b}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{display_8h_a70d9c1ce7339d0dcbbf9ac5c2367142d}{V\-X\-\_\-init} (\hyperlink{structVX__machine}{V\-X\-\_\-machine} driver, V\-X\-\_\-uint32 w, V\-X\-\_\-uint32 h, V\-X\-\_\-uint32 flags)
+\item 
+void \hyperlink{display_8h_ab3467d7e6d22cb4922141861419aa115}{V\-X\-\_\-machine\-\_\-default\-\_\-init} (\hyperlink{structVX__machine}{V\-X\-\_\-machine} $\ast$m)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVX__machine}{V\-X\-\_\-machine} \hyperlink{display_8h_a0575483efa4fa49fbceab1c0015cb0e2}{V\-X\-\_\-\-D\-R\-V\-\_\-sdl}
+\item 
+\hyperlink{structVX__machine}{V\-X\-\_\-machine} \hyperlink{display_8h_ab630e01b1188bcc4efeecd75c04d6730}{V\-X\-\_\-\-D\-R\-V\-\_\-null}
+\item 
+\hyperlink{structVX__machine}{V\-X\-\_\-machine} \hyperlink{display_8h_a5e21b1280abf6908289f0ad786562388}{V\-X\-\_\-lib}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{display_8h_ac0ce35eae20fc24a927f4896f175278c}{\index{display.\-h@{display.\-h}!V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N@{V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N}}
+\index{V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N@{V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N}!display.h@{display.\-h}}
+\subsubsection[{V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N~0x1}}\label{display_8h_ac0ce35eae20fc24a927f4896f175278c}
+Flag specifying if initialize with fullscreen 
+
+\subsection{Function Documentation}
+\hypertarget{display_8h_a70d9c1ce7339d0dcbbf9ac5c2367142d}{\index{display.\-h@{display.\-h}!V\-X\-\_\-init@{V\-X\-\_\-init}}
+\index{V\-X\-\_\-init@{V\-X\-\_\-init}!display.h@{display.\-h}}
+\subsubsection[{V\-X\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-machine}}]{driver, }
+\item[{V\-X\-\_\-uint32}]{w, }
+\item[{V\-X\-\_\-uint32}]{h, }
+\item[{V\-X\-\_\-uint32}]{flags}
+\end{DoxyParamCaption}
+)}}\label{display_8h_a70d9c1ce7339d0dcbbf9ac5c2367142d}
+Initialize driver and set it as main object (V\-X\-\_\-lib). 
+\begin{DoxyParams}{Parameters}
+{\em driver} & may be arbitrary structure of type \hyperlink{structVX__machine}{V\-X\-\_\-machine}, common use is V\-X\-\_\-\-D\-R\-V\-\_\-sdl or V\-X\-\_\-\-D\-R\-V\-\_\-null or any other self written driver. \\
+\hline
+{\em w} & width of framebuffer \\
+\hline
+{\em h} & height of framebuffer \\
+\hline
+{\em flags} & flags for machine, commonly 0 or V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N \\
+\hline
+\end{DoxyParams}
+\hypertarget{display_8h_ab3467d7e6d22cb4922141861419aa115}{\index{display.\-h@{display.\-h}!V\-X\-\_\-machine\-\_\-default\-\_\-init@{V\-X\-\_\-machine\-\_\-default\-\_\-init}}
+\index{V\-X\-\_\-machine\-\_\-default\-\_\-init@{V\-X\-\_\-machine\-\_\-default\-\_\-init}!display.h@{display.\-h}}
+\subsubsection[{V\-X\-\_\-machine\-\_\-default\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-machine\-\_\-default\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-machine} $\ast$}]{m}
+\end{DoxyParamCaption}
+)}}\label{display_8h_ab3467d7e6d22cb4922141861419aa115}
+Undocumented inner function 
+
+\subsection{Variable Documentation}
+\hypertarget{display_8h_ab630e01b1188bcc4efeecd75c04d6730}{\index{display.\-h@{display.\-h}!V\-X\-\_\-\-D\-R\-V\-\_\-null@{V\-X\-\_\-\-D\-R\-V\-\_\-null}}
+\index{V\-X\-\_\-\-D\-R\-V\-\_\-null@{V\-X\-\_\-\-D\-R\-V\-\_\-null}!display.h@{display.\-h}}
+\subsubsection[{V\-X\-\_\-\-D\-R\-V\-\_\-null}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-machine} V\-X\-\_\-\-D\-R\-V\-\_\-null}}\label{display_8h_ab630e01b1188bcc4efeecd75c04d6730}
+Predefined 2\-D driver using raw V\-X\-\_\-uint32 arrays as its backend. \hypertarget{display_8h_a0575483efa4fa49fbceab1c0015cb0e2}{\index{display.\-h@{display.\-h}!V\-X\-\_\-\-D\-R\-V\-\_\-sdl@{V\-X\-\_\-\-D\-R\-V\-\_\-sdl}}
+\index{V\-X\-\_\-\-D\-R\-V\-\_\-sdl@{V\-X\-\_\-\-D\-R\-V\-\_\-sdl}!display.h@{display.\-h}}
+\subsubsection[{V\-X\-\_\-\-D\-R\-V\-\_\-sdl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-machine} V\-X\-\_\-\-D\-R\-V\-\_\-sdl}}\label{display_8h_a0575483efa4fa49fbceab1c0015cb0e2}
+Predefined 2\-D driver using S\-D\-L (Simple direct layer) as its backend. \hypertarget{display_8h_a5e21b1280abf6908289f0ad786562388}{\index{display.\-h@{display.\-h}!V\-X\-\_\-lib@{V\-X\-\_\-lib}}
+\index{V\-X\-\_\-lib@{V\-X\-\_\-lib}!display.h@{display.\-h}}
+\subsubsection[{V\-X\-\_\-lib}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-machine} V\-X\-\_\-lib}}\label{display_8h_a5e21b1280abf6908289f0ad786562388}
+Global main object of library, which operates with machine. 

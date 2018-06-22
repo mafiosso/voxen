@@ -1,0 +1,86 @@
+\hypertarget{structVX__machine}{\section{V\-X\-\_\-machine Struct Reference}
+\label{structVX__machine}\index{V\-X\-\_\-machine@{V\-X\-\_\-machine}}
+}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int($\ast$ \hyperlink{structVX__machine_ad57f58fbf3748564540fc194ba5127e5}{init} )(struct \hyperlink{structVX__machine}{V\-X\-\_\-machine} $\ast$self, \hyperlink{structVX__rect}{V\-X\-\_\-rect} resolution, V\-X\-\_\-uint32 flags)
+\item 
+int($\ast$ \hyperlink{structVX__machine_aa5cef4ff4d7c4bcceff65c2556538276}{quit} )(struct \hyperlink{structVX__machine}{V\-X\-\_\-machine} $\ast$self)
+\item 
+\hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$($\ast$ \hyperlink{structVX__machine_a0bd87154ba42102c4577f063a79a6341}{make\-\_\-surface} )(V\-X\-\_\-uint32 w, V\-X\-\_\-uint32 h)
+\item 
+void($\ast$ \hyperlink{structVX__machine_a5f2254de23697f967ca4aad5eb4ca77f}{redraw} )(struct \hyperlink{structVX__machine}{V\-X\-\_\-machine} $\ast$self)
+\item 
+\hypertarget{structVX__machine_a3ad34b72424bdf813c266bb18d6762a8}{\hyperlink{structVX__rect}{V\-X\-\_\-rect} {\bfseries resolution}}\label{structVX__machine_a3ad34b72424bdf813c266bb18d6762a8}
+
+\item 
+\hypertarget{structVX__machine_a1f2a8b54415c186c49a5a2a894d86831}{V\-X\-\_\-uint32 {\bfseries flags}}\label{structVX__machine_a1f2a8b54415c186c49a5a2a894d86831}
+
+\item 
+\hypertarget{structVX__machine_ad7039e581a2c8cfaa9d6c7a472b13ab7}{\hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$ {\bfseries native\-\_\-surface}}\label{structVX__machine_ad7039e581a2c8cfaa9d6c7a472b13ab7}
+
+\item 
+\hypertarget{structVX__machine_aa10bff31ff3771d583f2ca4665296bf7}{int {\bfseries cores\-\_\-count}}\label{structVX__machine_aa10bff31ff3771d583f2ca4665296bf7}
+
+\item 
+void $\ast$ \hyperlink{structVX__machine_a3dad4ae38a7b001a095ed4fe36d62f12}{custom\-\_\-dta}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__machine_a3dad4ae38a7b001a095ed4fe36d62f12}{\index{V\-X\-\_\-machine@{V\-X\-\_\-machine}!custom\-\_\-dta@{custom\-\_\-dta}}
+\index{custom\-\_\-dta@{custom\-\_\-dta}!VX_machine@{V\-X\-\_\-machine}}
+\subsubsection[{custom\-\_\-dta}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ V\-X\-\_\-machine\-::custom\-\_\-dta}}\label{structVX__machine_a3dad4ae38a7b001a095ed4fe36d62f12}
+Custom data pointer, may be accessed only by programmer of driver \hypertarget{structVX__machine_ad57f58fbf3748564540fc194ba5127e5}{\index{V\-X\-\_\-machine@{V\-X\-\_\-machine}!init@{init}}
+\index{init@{init}!VX_machine@{V\-X\-\_\-machine}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ V\-X\-\_\-machine\-::init)(struct {\bf V\-X\-\_\-machine} $\ast$self, {\bf V\-X\-\_\-rect} resolution, V\-X\-\_\-uint32 flags)}}\label{structVX__machine_ad57f58fbf3748564540fc194ba5127e5}
+Initialize \hyperlink{structVX__machine}{V\-X\-\_\-machine} self with resolution given by resolution and with flags. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em resoulution} & rectangle where is important only information about width and height, x and y values are ignored \\
+\hline
+{\em flags} & is set of possible Vo\-Xen flags (commonly V\-X\-\_\-\-F\-U\-L\-L\-S\-C\-R\-E\-E\-N) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns 0 on success, not 0 on fail, some implementations may exit with -\/1 
+\end{DoxyReturn}
+\hypertarget{structVX__machine_a0bd87154ba42102c4577f063a79a6341}{\index{V\-X\-\_\-machine@{V\-X\-\_\-machine}!make\-\_\-surface@{make\-\_\-surface}}
+\index{make\-\_\-surface@{make\-\_\-surface}!VX_machine@{V\-X\-\_\-machine}}
+\subsubsection[{make\-\_\-surface}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-surface}$\ast$($\ast$ V\-X\-\_\-machine\-::make\-\_\-surface)(V\-X\-\_\-uint32 w, V\-X\-\_\-uint32 h)}}\label{structVX__machine_a0bd87154ba42102c4577f063a79a6341}
+Allocates new device-\/independent surface with size w,h and format A\-R\-G\-B32. 
+\begin{DoxyParams}{Parameters}
+{\em w} & width of image \\
+\hline
+{\em h} & height of image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valid \hyperlink{structVX__surface}{V\-X\-\_\-surface} pointer on success, N\-U\-L\-L when failed. 
+\end{DoxyReturn}
+\hypertarget{structVX__machine_aa5cef4ff4d7c4bcceff65c2556538276}{\index{V\-X\-\_\-machine@{V\-X\-\_\-machine}!quit@{quit}}
+\index{quit@{quit}!VX_machine@{V\-X\-\_\-machine}}
+\subsubsection[{quit}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ V\-X\-\_\-machine\-::quit)(struct {\bf V\-X\-\_\-machine} $\ast$self)}}\label{structVX__machine_aa5cef4ff4d7c4bcceff65c2556538276}
+Quits machine self and does all needed frees and deallocations. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, not 0 on fail 
+\end{DoxyReturn}
+\hypertarget{structVX__machine_a5f2254de23697f967ca4aad5eb4ca77f}{\index{V\-X\-\_\-machine@{V\-X\-\_\-machine}!redraw@{redraw}}
+\index{redraw@{redraw}!VX_machine@{V\-X\-\_\-machine}}
+\subsubsection[{redraw}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-machine\-::redraw)(struct {\bf V\-X\-\_\-machine} $\ast$self)}}\label{structVX__machine_a5f2254de23697f967ca4aad5eb4ca77f}
+Redraws framebuffer of the machine. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{display_8h}{display.\-h}\end{DoxyCompactItemize}

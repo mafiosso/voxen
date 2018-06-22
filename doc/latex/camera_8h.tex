@@ -1,0 +1,48 @@
+\hypertarget{camera_8h}{\section{camera.\-h File Reference}
+\label{camera_8h}\index{camera.\-h@{camera.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__camera}{V\-X\-\_\-camera}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structVX__camera}{V\-X\-\_\-camera} \hyperlink{camera_8h_a339f46bda80791e2d403cde030fc13c9}{V\-X\-\_\-camera}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVX__camera}{V\-X\-\_\-camera} $\ast$ \hyperlink{camera_8h_a581090a9241454f6204f2f0a9bbcf247}{V\-X\-\_\-camera\-\_\-new} (\hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$surf, \hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3}($\ast$ray\-\_\-generator)(\hyperlink{structVX__camera}{V\-X\-\_\-camera} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y), int cpus\-\_\-count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{camera_8h_a339f46bda80791e2d403cde030fc13c9}{\index{camera.\-h@{camera.\-h}!V\-X\-\_\-camera@{V\-X\-\_\-camera}}
+\index{V\-X\-\_\-camera@{V\-X\-\_\-camera}!camera.h@{camera.\-h}}
+\subsubsection[{V\-X\-\_\-camera}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-camera} {\bf V\-X\-\_\-camera}}}\label{camera_8h_a339f46bda80791e2d403cde030fc13c9}
+Structure representing camera in raytracing model. 
+
+\subsection{Function Documentation}
+\hypertarget{camera_8h_a581090a9241454f6204f2f0a9bbcf247}{\index{camera.\-h@{camera.\-h}!V\-X\-\_\-camera\-\_\-new@{V\-X\-\_\-camera\-\_\-new}}
+\index{V\-X\-\_\-camera\-\_\-new@{V\-X\-\_\-camera\-\_\-new}!camera.h@{camera.\-h}}
+\subsubsection[{V\-X\-\_\-camera\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-camera}$\ast$ V\-X\-\_\-camera\-\_\-new (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-surface} $\ast$}]{surf, }
+\item[{{\bf V\-X\-\_\-fpoint3}($\ast$)({\bf V\-X\-\_\-camera} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y)}]{ray\-\_\-generator, }
+\item[{int}]{cpus\-\_\-count}
+\end{DoxyParamCaption}
+)}}\label{camera_8h_a581090a9241454f6204f2f0a9bbcf247}
+Constructor for \hyperlink{structVX__camera}{V\-X\-\_\-camera} object. 
+\begin{DoxyParams}{Parameters}
+{\em surf} & some surface of type \hyperlink{structVX__surface}{V\-X\-\_\-surface}, can not be N\-U\-L\-L, otherwise undefined behavior occurs \\
+\hline
+{\em ray\-\_\-generator} & function used for generating rays, may be N\-U\-L\-L, then standard perspective correction will be used \\
+\hline
+{\em cpus\-\_\-count} & specifying number of threads for raytracing, when value is less than 1 is passed, then camera will create as same threads as your C\-P\-U has, otherwise the passed value will be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valid \hyperlink{structVX__camera}{V\-X\-\_\-camera} pointer on success, N\-U\-L\-L on fail 
+\end{DoxyReturn}

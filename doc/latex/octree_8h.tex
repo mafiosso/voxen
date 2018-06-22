@@ -1,0 +1,91 @@
+\hypertarget{octree_8h}{\section{octree.\-h File Reference}
+\label{octree_8h}\index{octree.\-h@{octree.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__oct__node}{V\-X\-\_\-oct\-\_\-node}
+\item 
+struct \hyperlink{structVX__oct__node__leaf}{V\-X\-\_\-oct\-\_\-node\-\_\-leaf}
+\item 
+struct \hyperlink{structVX__oct__info}{V\-X\-\_\-oct\-\_\-info}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structVX__oct__node}{V\-X\-\_\-oct\-\_\-node} \hyperlink{octree_8h_aea28ee975ba988bd30609f56d5b3b669}{V\-X\-\_\-oct\-\_\-node}
+\item 
+typedef struct \hyperlink{structVX__oct__node__leaf}{V\-X\-\_\-oct\-\_\-node\-\_\-leaf} \hyperlink{octree_8h_a57e049f5199500f4071c1b800936ae04}{V\-X\-\_\-oct\-\_\-node\-\_\-leaf}
+\item 
+typedef struct \hyperlink{structVX__oct__info}{V\-X\-\_\-oct\-\_\-info} \hyperlink{octree_8h_a92feb877a8b5a39274544f758b66e227}{V\-X\-\_\-oct\-\_\-info}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{octree_8h_a84b76719b48fe290069edeeb325e80ce}{V\-X\-\_\-oct\-\_\-set\-\_\-size} (\hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, int size)
+\item 
+int \hyperlink{octree_8h_a89cf3e9759d70673d804b8c22cfab0f3}{V\-X\-\_\-oct\-\_\-fill\-\_\-region} (\hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, \hyperlink{structVX__ms__block}{V\-X\-\_\-ms\-\_\-block} b, V\-X\-\_\-uint32 color)
+\item 
+\hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$ \hyperlink{octree_8h_a82bb5dc1e4e39e17759334950afe8b6e}{V\-X\-\_\-model\-\_\-octree\-\_\-new} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{octree_8h_a92feb877a8b5a39274544f758b66e227}{\index{octree.\-h@{octree.\-h}!V\-X\-\_\-oct\-\_\-info@{V\-X\-\_\-oct\-\_\-info}}
+\index{V\-X\-\_\-oct\-\_\-info@{V\-X\-\_\-oct\-\_\-info}!octree.h@{octree.\-h}}
+\subsubsection[{V\-X\-\_\-oct\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-oct\-\_\-info} {\bf V\-X\-\_\-oct\-\_\-info}}}\label{octree_8h_a92feb877a8b5a39274544f758b66e227}
+Private undocumented structure holding information about octree \hypertarget{octree_8h_aea28ee975ba988bd30609f56d5b3b669}{\index{octree.\-h@{octree.\-h}!V\-X\-\_\-oct\-\_\-node@{V\-X\-\_\-oct\-\_\-node}}
+\index{V\-X\-\_\-oct\-\_\-node@{V\-X\-\_\-oct\-\_\-node}!octree.h@{octree.\-h}}
+\subsubsection[{V\-X\-\_\-oct\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-oct\-\_\-node} {\bf V\-X\-\_\-oct\-\_\-node}}}\label{octree_8h_aea28ee975ba988bd30609f56d5b3b669}
+Private undocumented structure holding octree node \hypertarget{octree_8h_a57e049f5199500f4071c1b800936ae04}{\index{octree.\-h@{octree.\-h}!V\-X\-\_\-oct\-\_\-node\-\_\-leaf@{V\-X\-\_\-oct\-\_\-node\-\_\-leaf}}
+\index{V\-X\-\_\-oct\-\_\-node\-\_\-leaf@{V\-X\-\_\-oct\-\_\-node\-\_\-leaf}!octree.h@{octree.\-h}}
+\subsubsection[{V\-X\-\_\-oct\-\_\-node\-\_\-leaf}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-oct\-\_\-node\-\_\-leaf} {\bf V\-X\-\_\-oct\-\_\-node\-\_\-leaf}}}\label{octree_8h_a57e049f5199500f4071c1b800936ae04}
+Private undocumented structure holding leaf octree node 
+
+\subsection{Function Documentation}
+\hypertarget{octree_8h_a82bb5dc1e4e39e17759334950afe8b6e}{\index{octree.\-h@{octree.\-h}!V\-X\-\_\-model\-\_\-octree\-\_\-new@{V\-X\-\_\-model\-\_\-octree\-\_\-new}}
+\index{V\-X\-\_\-model\-\_\-octree\-\_\-new@{V\-X\-\_\-model\-\_\-octree\-\_\-new}!octree.h@{octree.\-h}}
+\subsubsection[{V\-X\-\_\-model\-\_\-octree\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-model}$\ast$ V\-X\-\_\-model\-\_\-octree\-\_\-new (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{octree_8h_a82bb5dc1e4e39e17759334950afe8b6e}
+Constructor of octree model format, color format can not be modified and is set to A\-R\-G\-B32. \begin{DoxyReturn}{Returns}
+valid \hyperlink{structVX__model}{V\-X\-\_\-model} pointer (when malloc can not fail -\/ on U\-N\-I\-X) 
+\end{DoxyReturn}
+\hypertarget{octree_8h_a89cf3e9759d70673d804b8c22cfab0f3}{\index{octree.\-h@{octree.\-h}!V\-X\-\_\-oct\-\_\-fill\-\_\-region@{V\-X\-\_\-oct\-\_\-fill\-\_\-region}}
+\index{V\-X\-\_\-oct\-\_\-fill\-\_\-region@{V\-X\-\_\-oct\-\_\-fill\-\_\-region}!octree.h@{octree.\-h}}
+\subsubsection[{V\-X\-\_\-oct\-\_\-fill\-\_\-region}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-oct\-\_\-fill\-\_\-region (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-model} $\ast$}]{self, }
+\item[{{\bf V\-X\-\_\-ms\-\_\-block}}]{b, }
+\item[{V\-X\-\_\-uint32}]{color}
+\end{DoxyParamCaption}
+)}}\label{octree_8h_a89cf3e9759d70673d804b8c22cfab0f3}
+Additional function for octree for fast filling of large regions. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em b} & block to fill \\
+\hline
+{\em color} & color to fill region b with \\
+\hline
+\end{DoxyParams}
+\hypertarget{octree_8h_a84b76719b48fe290069edeeb325e80ce}{\index{octree.\-h@{octree.\-h}!V\-X\-\_\-oct\-\_\-set\-\_\-size@{V\-X\-\_\-oct\-\_\-set\-\_\-size}}
+\index{V\-X\-\_\-oct\-\_\-set\-\_\-size@{V\-X\-\_\-oct\-\_\-set\-\_\-size}!octree.h@{octree.\-h}}
+\subsubsection[{V\-X\-\_\-oct\-\_\-set\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int V\-X\-\_\-oct\-\_\-set\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-model} $\ast$}]{self, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{octree_8h_a84b76719b48fe290069edeeb325e80ce}
+Additional function that modifies size of valid octree. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em size} & size of all edges \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}

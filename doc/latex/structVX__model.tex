@@ -1,0 +1,177 @@
+\hypertarget{structVX__model}{\section{V\-X\-\_\-model Struct Reference}
+\label{structVX__model}\index{V\-X\-\_\-model@{V\-X\-\_\-model}}
+}
+
+
+{\ttfamily \#include $<$voxel.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structVX__model_a7a676bd51b944cbe0eab4f8bb88a1bd6}{V\-X\-\_\-node {\bfseries root}}\label{structVX__model_a7a676bd51b944cbe0eab4f8bb88a1bd6}
+
+\item 
+\hypertarget{structVX__model_a1ef022d1d8eb8e99a51b1300dbdc60f5}{void $\ast$ {\bfseries chunk\-\_\-ptr}}\label{structVX__model_a1ef022d1d8eb8e99a51b1300dbdc60f5}
+
+\item 
+\hypertarget{structVX__model_a9b12c95af94b719583f49aa477b40b82}{\hyperlink{structVX__block}{V\-X\-\_\-block} {\bfseries dim\-\_\-size}}\label{structVX__model_a9b12c95af94b719583f49aa477b40b82}
+
+\item 
+\hypertarget{structVX__model_aa220cee06d8f6f6d6af664ab58852b3b}{\hyperlink{structVX__format}{V\-X\-\_\-format} $\ast$ {\bfseries fmt}}\label{structVX__model_aa220cee06d8f6f6d6af664ab58852b3b}
+
+\item 
+int($\ast$ \hyperlink{structVX__model_affc69898370ac445fb57f55e262b07cb}{compile} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$m)
+\item 
+int($\ast$ \hyperlink{structVX__model_a79f230b8c7c5c863f047d9465e662a56}{dump} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, const char $\ast$file)
+\item 
+void($\ast$ \hyperlink{structVX__model_a364592c8e3e50b10c2ac20c269b21e9e}{inspect} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self)
+\item 
+V\-X\-\_\-byte $\ast$($\ast$ \hyperlink{structVX__model_a377285d816fc87e24f91c77fc4a96a72}{get\-\_\-voxel} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y, V\-X\-\_\-uint32 z, int $\ast$lod)
+\item 
+void($\ast$ \hyperlink{structVX__model_a23152a65b6fe9706f0739bd69935206a}{set\-\_\-voxel} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y, V\-X\-\_\-uint32 z, V\-X\-\_\-uint32 color)
+\item 
+V\-X\-\_\-uint32($\ast$ \hyperlink{structVX__model_a38625f06da2593c36f9ba092ae07cfd0}{ray\-\_\-voxel} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, float $\ast$position, float $\ast$norm\-\_\-vect, float $\ast$end\-\_\-point, int lod)
+\item 
+void($\ast$ \hyperlink{structVX__model_a92ba0d38f0ec8ee593c242e9de7c5d07}{present} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, \hyperlink{structVX__camera}{V\-X\-\_\-camera} $\ast$, \hyperlink{structVX__rect}{V\-X\-\_\-rect} clip\-\_\-rect)
+\item 
+int($\ast$ \hyperlink{structVX__model_ab7d7fcf8ad77630cce9a33ba2d34fc79}{load} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self, const char $\ast$path)
+\item 
+void($\ast$ \hyperlink{structVX__model_a2edb2c0e903ae5422f19640d14550614}{free} )(struct \hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$self)
+\item 
+void $\ast$ \hyperlink{structVX__model_a6caa79e92123cf10b93b19201849a024}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structVX__model}{V\-X\-\_\-model} is general interface for implementing various models and doing raytracing on them. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__model_affc69898370ac445fb57f55e262b07cb}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!compile@{compile}}
+\index{compile@{compile}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{compile}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ V\-X\-\_\-model\-::compile)(struct {\bf V\-X\-\_\-model} $\ast$self, struct {\bf V\-X\-\_\-model} $\ast$m)}}\label{structVX__model_affc69898370ac445fb57f55e262b07cb}
+Compiles model m into model self (meaning is to copy one model to other -\/ the models can be different type). 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em m} & arbitrary model to compile into self \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, not 0 on fail 
+\end{DoxyReturn}
+\hypertarget{structVX__model_a6caa79e92123cf10b93b19201849a024}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!data@{data}}
+\index{data@{data}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ V\-X\-\_\-model\-::data}}\label{structVX__model_a6caa79e92123cf10b93b19201849a024}
+User data \hypertarget{structVX__model_a79f230b8c7c5c863f047d9465e662a56}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!dump@{dump}}
+\index{dump@{dump}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ V\-X\-\_\-model\-::dump)(struct {\bf V\-X\-\_\-model} $\ast$self, const char $\ast$file)}}\label{structVX__model_a79f230b8c7c5c863f047d9465e662a56}
+Saves model self into file named file. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em path} & to file which will be created or rewritten. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, not 0 on fail 
+\end{DoxyReturn}
+\hypertarget{structVX__model_a2edb2c0e903ae5422f19640d14550614}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!free@{free}}
+\index{free@{free}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-model\-::free)(struct {\bf V\-X\-\_\-model} $\ast$self)}}\label{structVX__model_a2edb2c0e903ae5422f19640d14550614}
+Correctly frees memory allocated by model. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__model_a377285d816fc87e24f91c77fc4a96a72}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!get\-\_\-voxel@{get\-\_\-voxel}}
+\index{get\-\_\-voxel@{get\-\_\-voxel}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{get\-\_\-voxel}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-byte$\ast$($\ast$ V\-X\-\_\-model\-::get\-\_\-voxel)(struct {\bf V\-X\-\_\-model} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y, V\-X\-\_\-uint32 z, int $\ast$lod)}}\label{structVX__model_a377285d816fc87e24f91c77fc4a96a72}
+Obtains pointer to color of voxel placed on position $<$x,y,z$>$ 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+{\em lod} & input/output specifies level of detail, in some models (raw) must not be implemented, but for other models should be big enough. Output is then $\ast$lod minus (how much levels was traversed). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to color 
+\end{DoxyReturn}
+\hypertarget{structVX__model_a364592c8e3e50b10c2ac20c269b21e9e}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!inspect@{inspect}}
+\index{inspect@{inspect}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{inspect}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-model\-::inspect)(struct {\bf V\-X\-\_\-model} $\ast$self)}}\label{structVX__model_a364592c8e3e50b10c2ac20c269b21e9e}
+Prints some information and stats about model on the stdout 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__model_ab7d7fcf8ad77630cce9a33ba2d34fc79}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!load@{load}}
+\index{load@{load}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ V\-X\-\_\-model\-::load)(struct {\bf V\-X\-\_\-model} $\ast$self, const char $\ast$path)}}\label{structVX__model_ab7d7fcf8ad77630cce9a33ba2d34fc79}
+Loads model from file path. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em path} & path to a file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, not 0 on fail 
+\end{DoxyReturn}
+\hypertarget{structVX__model_a92ba0d38f0ec8ee593c242e9de7c5d07}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!present@{present}}
+\index{present@{present}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{present}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-model\-::present)(struct {\bf V\-X\-\_\-model} $\ast$self, {\bf V\-X\-\_\-camera} $\ast$, {\bf V\-X\-\_\-rect} clip\-\_\-rect)}}\label{structVX__model_a92ba0d38f0ec8ee593c242e9de7c5d07}
+Doing raytracing for camera on model self and on area specified as clip\-\_\-rect. This method may be replaced any other well implementing presenting process (For example Open\-C\-L implementation). 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em camera} & \\
+\hline
+{\em clip\-\_\-rect} & specifies area of framebuffer which should be redrawn \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__model_a38625f06da2593c36f9ba092ae07cfd0}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!ray\-\_\-voxel@{ray\-\_\-voxel}}
+\index{ray\-\_\-voxel@{ray\-\_\-voxel}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{ray\-\_\-voxel}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32($\ast$ V\-X\-\_\-model\-::ray\-\_\-voxel)(struct {\bf V\-X\-\_\-model} $\ast$self, float $\ast$position, float $\ast$norm\-\_\-vect, float $\ast$end\-\_\-point, int lod)}}\label{structVX__model_a38625f06da2593c36f9ba092ae07cfd0}
+Doing ray trace for ray, that starts in position, with vector norm\-\_\-vect and with lod limit. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em position} & ray starting point \\
+\hline
+{\em norm\-\_\-vect} & firection of ray \\
+\hline
+{\em end\-\_\-point} & unused \\
+\hline
+{\em lod} & level of detail, may restrict using small voxels (quality drop occurs then) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+color in A\-R\-G\-B32 format 
+\end{DoxyReturn}
+\hypertarget{structVX__model_a23152a65b6fe9706f0739bd69935206a}{\index{V\-X\-\_\-model@{V\-X\-\_\-model}!set\-\_\-voxel@{set\-\_\-voxel}}
+\index{set\-\_\-voxel@{set\-\_\-voxel}!VX_model@{V\-X\-\_\-model}}
+\subsubsection[{set\-\_\-voxel}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-model\-::set\-\_\-voxel)(struct {\bf V\-X\-\_\-model} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y, V\-X\-\_\-uint32 z, V\-X\-\_\-uint32 color)}}\label{structVX__model_a23152a65b6fe9706f0739bd69935206a}
+Sets voxel at $<$x,y,z$>$ with color. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{voxel_8h}{voxel.\-h}\end{DoxyCompactItemize}

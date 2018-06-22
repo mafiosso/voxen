@@ -1,0 +1,58 @@
+\hypertarget{structVX__ray__generator}{\section{V\-X\-\_\-ray\-\_\-generator Struct Reference}
+\label{structVX__ray__generator}\index{V\-X\-\_\-ray\-\_\-generator@{V\-X\-\_\-ray\-\_\-generator}}
+}
+
+
+{\ttfamily \#include $<$ray.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structVX__ray__generator_a56aa3b292ae5cdae56693355a02b67f2}{V\-X\-\_\-uint32 {\bfseries w}}\label{structVX__ray__generator_a56aa3b292ae5cdae56693355a02b67f2}
+
+\item 
+\hypertarget{structVX__ray__generator_acf8a7def1e878bf8b76df8854908923e}{V\-X\-\_\-uint32 {\bfseries h}}\label{structVX__ray__generator_acf8a7def1e878bf8b76df8854908923e}
+
+\item 
+\hypertarget{structVX__ray__generator_a1fc8392e5f989ff4620f29fa89c31217}{\hyperlink{structVX__fpoint3}{V\-X\-\_\-fpoint3} $\ast$ {\bfseries buffer}}\label{structVX__ray__generator_a1fc8392e5f989ff4620f29fa89c31217}
+
+\item 
+void($\ast$ \hyperlink{structVX__ray__generator_a3f80cb2c5230366def4e80c00c722a40}{get\-\_\-ray} )(struct \hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} $\ast$, V\-X\-\_\-uint32, V\-X\-\_\-uint32, double\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float\mbox{[}4\mbox{]})
+\item 
+void($\ast$ \hyperlink{structVX__ray__generator_a191435961de0da7b56bb6153e61f9c26}{destroy} )(struct \hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ray generator object. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__ray__generator_a191435961de0da7b56bb6153e61f9c26}{\index{V\-X\-\_\-ray\-\_\-generator@{V\-X\-\_\-ray\-\_\-generator}!destroy@{destroy}}
+\index{destroy@{destroy}!VX_ray_generator@{V\-X\-\_\-ray\-\_\-generator}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-ray\-\_\-generator\-::destroy)(struct {\bf V\-X\-\_\-ray\-\_\-generator} $\ast$)}}\label{structVX__ray__generator_a191435961de0da7b56bb6153e61f9c26}
+Frees \hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} object 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__ray__generator_a3f80cb2c5230366def4e80c00c722a40}{\index{V\-X\-\_\-ray\-\_\-generator@{V\-X\-\_\-ray\-\_\-generator}!get\-\_\-ray@{get\-\_\-ray}}
+\index{get\-\_\-ray@{get\-\_\-ray}!VX_ray_generator@{V\-X\-\_\-ray\-\_\-generator}}
+\subsubsection[{get\-\_\-ray}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-ray\-\_\-generator\-::get\-\_\-ray)(struct {\bf V\-X\-\_\-ray\-\_\-generator} $\ast$, V\-X\-\_\-uint32, V\-X\-\_\-uint32, double\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float\mbox{[}4\mbox{]})}}\label{structVX__ray__generator_a3f80cb2c5230366def4e80c00c722a40}
+Obtains ray for coordinates x, y and transforms it by viewing matrix m 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+{\em m} & viewing matrix \\
+\hline
+{\em ray} & output ray transformed by m \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ray_8h}{ray.\-h}\end{DoxyCompactItemize}

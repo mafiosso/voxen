@@ -1,0 +1,48 @@
+\hypertarget{ray_8h}{\section{ray.\-h File Reference}
+\label{ray_8h}\index{ray.\-h@{ray.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} \hyperlink{ray_8h_a0aa99c3f5ba9d162a21eadf458efc292}{V\-X\-\_\-ray\-\_\-generator}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} $\ast$ \hyperlink{ray_8h_a412e2a415743d979ae979625531553a4}{V\-X\-\_\-ray\-\_\-generator\-\_\-new} (V\-X\-\_\-uint32 w, V\-X\-\_\-uint32 h, void($\ast$ray\-\_\-gen)(\hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} $\ast$, V\-X\-\_\-uint32, V\-X\-\_\-uint32 y, double m\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float out\mbox{[}4\mbox{]}))
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ray_8h_a0aa99c3f5ba9d162a21eadf458efc292}{\index{ray.\-h@{ray.\-h}!V\-X\-\_\-ray\-\_\-generator@{V\-X\-\_\-ray\-\_\-generator}}
+\index{V\-X\-\_\-ray\-\_\-generator@{V\-X\-\_\-ray\-\_\-generator}!ray.h@{ray.\-h}}
+\subsubsection[{V\-X\-\_\-ray\-\_\-generator}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-ray\-\_\-generator} {\bf V\-X\-\_\-ray\-\_\-generator}}}\label{ray_8h_a0aa99c3f5ba9d162a21eadf458efc292}
+Ray generator object. 
+
+\subsection{Function Documentation}
+\hypertarget{ray_8h_a412e2a415743d979ae979625531553a4}{\index{ray.\-h@{ray.\-h}!V\-X\-\_\-ray\-\_\-generator\-\_\-new@{V\-X\-\_\-ray\-\_\-generator\-\_\-new}}
+\index{V\-X\-\_\-ray\-\_\-generator\-\_\-new@{V\-X\-\_\-ray\-\_\-generator\-\_\-new}!ray.h@{ray.\-h}}
+\subsubsection[{V\-X\-\_\-ray\-\_\-generator\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-ray\-\_\-generator}$\ast$ V\-X\-\_\-ray\-\_\-generator\-\_\-new (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{w, }
+\item[{V\-X\-\_\-uint32}]{h, }
+\item[{void($\ast$)({\bf V\-X\-\_\-ray\-\_\-generator} $\ast$, V\-X\-\_\-uint32, V\-X\-\_\-uint32 y, double m\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float out\mbox{[}4\mbox{]})}]{ray\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{ray_8h_a412e2a415743d979ae979625531553a4}
+Constructor for ray generator. 
+\begin{DoxyParams}{Parameters}
+{\em w} & width of framebuffer \\
+\hline
+{\em h} & height of framebuffer \\
+\hline
+{\em ray\-\_\-gen} & function used for obtaining rays \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valid \hyperlink{structVX__ray__generator}{V\-X\-\_\-ray\-\_\-generator} pointer when success, N\-U\-L\-L otherwise. 
+\end{DoxyReturn}

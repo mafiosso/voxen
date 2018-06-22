@@ -1,0 +1,71 @@
+\hypertarget{structVX__format}{\section{V\-X\-\_\-format Struct Reference}
+\label{structVX__format}\index{V\-X\-\_\-format@{V\-X\-\_\-format}}
+}
+
+
+{\ttfamily \#include $<$vx\-\_\-fundamental.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V\-X\-\_\-byte \hyperlink{structVX__format_ac3c60bc6d9b514af42bcdd317f95aa7f}{bit\-\_\-pp}
+\item 
+V\-X\-\_\-byte \hyperlink{structVX__format_ab8b944e1dee823f20fc1fbb20a3ffc2d}{byte\-\_\-pp}
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__format_a859b157f238ed3495a926a866077313e}{Rsz}
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__format_a3c77f13c487325f5cd424e8d2f630fd4}{Gsz}
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__format_a0c77f4eb51f10ef17e4826d9bb1fedcb}{Bsz}
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__format_a51927e3b58188b62c7ab5538ab9a9653}{Asz}
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__format_ad1f7e23d7858315574c57c6bafac8d39}{colorkey}
+\item 
+V\-X\-\_\-uint32($\ast$ \hyperlink{structVX__format_ad6bed9f8736501502c0e00548bdb08b8}{A\-R\-G\-B32} )(struct \hyperlink{structVX__format}{V\-X\-\_\-format} $\ast$, V\-X\-\_\-byte $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure representing color format. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__format_ad6bed9f8736501502c0e00548bdb08b8}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!A\-R\-G\-B32@{A\-R\-G\-B32}}
+\index{A\-R\-G\-B32@{A\-R\-G\-B32}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{A\-R\-G\-B32}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32($\ast$ V\-X\-\_\-format\-::\-A\-R\-G\-B32)(struct {\bf V\-X\-\_\-format} $\ast$, V\-X\-\_\-byte $\ast$ptr)}}\label{structVX__format_ad6bed9f8736501502c0e00548bdb08b8}
+Conversion function, from this format to A\-R\-G\-B32 standard format, this function must be set at least once by user. 
+\begin{DoxyParams}{Parameters}
+{\em self} & this pointer \\
+\hline
+{\em ptr} & pointer to color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valid A\-R\-G\-B32 color 
+\end{DoxyReturn}
+\hypertarget{structVX__format_a51927e3b58188b62c7ab5538ab9a9653}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!Asz@{Asz}}
+\index{Asz@{Asz}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{Asz}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-format\-::\-Asz}}\label{structVX__format_a51927e3b58188b62c7ab5538ab9a9653}
+Asz count of bits used for alpha \hypertarget{structVX__format_ac3c60bc6d9b514af42bcdd317f95aa7f}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!bit\-\_\-pp@{bit\-\_\-pp}}
+\index{bit\-\_\-pp@{bit\-\_\-pp}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{bit\-\_\-pp}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-byte V\-X\-\_\-format\-::bit\-\_\-pp}}\label{structVX__format_ac3c60bc6d9b514af42bcdd317f95aa7f}
+count of bits used by one pixel. \hypertarget{structVX__format_a0c77f4eb51f10ef17e4826d9bb1fedcb}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!Bsz@{Bsz}}
+\index{Bsz@{Bsz}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{Bsz}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-format\-::\-Bsz}}\label{structVX__format_a0c77f4eb51f10ef17e4826d9bb1fedcb}
+Bsz count of bits used for blue \hypertarget{structVX__format_ab8b944e1dee823f20fc1fbb20a3ffc2d}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!byte\-\_\-pp@{byte\-\_\-pp}}
+\index{byte\-\_\-pp@{byte\-\_\-pp}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{byte\-\_\-pp}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-byte V\-X\-\_\-format\-::byte\-\_\-pp}}\label{structVX__format_ab8b944e1dee823f20fc1fbb20a3ffc2d}
+count of bytes used by pixel \hypertarget{structVX__format_ad1f7e23d7858315574c57c6bafac8d39}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!colorkey@{colorkey}}
+\index{colorkey@{colorkey}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{colorkey}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-format\-::colorkey}}\label{structVX__format_ad1f7e23d7858315574c57c6bafac8d39}
+colorkey is colorkey value used as transparent color \hypertarget{structVX__format_a3c77f13c487325f5cd424e8d2f630fd4}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!Gsz@{Gsz}}
+\index{Gsz@{Gsz}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{Gsz}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-format\-::\-Gsz}}\label{structVX__format_a3c77f13c487325f5cd424e8d2f630fd4}
+count of bits used for green \hypertarget{structVX__format_a859b157f238ed3495a926a866077313e}{\index{V\-X\-\_\-format@{V\-X\-\_\-format}!Rsz@{Rsz}}
+\index{Rsz@{Rsz}!VX_format@{V\-X\-\_\-format}}
+\subsubsection[{Rsz}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-format\-::\-Rsz}}\label{structVX__format_a859b157f238ed3495a926a866077313e}
+count of bits used for red 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vx__fundamental_8h}{vx\-\_\-fundamental.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,29 @@
+\hypertarget{vxlfmt_8h}{\section{vxlfmt.\-h File Reference}
+\label{vxlfmt_8h}\index{vxlfmt.\-h@{vxlfmt.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\-X\-\_\-int32 \hyperlink{vxlfmt_8h_a3e866e99642cdbe6e3a2ee31d4e00422}{V\-X\-\_\-vxlfmt\-\_\-load} (\hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$m, const char $\ast$path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{vxlfmt_8h_a3e866e99642cdbe6e3a2ee31d4e00422}{\index{vxlfmt.\-h@{vxlfmt.\-h}!V\-X\-\_\-vxlfmt\-\_\-load@{V\-X\-\_\-vxlfmt\-\_\-load}}
+\index{V\-X\-\_\-vxlfmt\-\_\-load@{V\-X\-\_\-vxlfmt\-\_\-load}!vxlfmt.h@{vxlfmt.\-h}}
+\subsubsection[{V\-X\-\_\-vxlfmt\-\_\-load}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-int32 V\-X\-\_\-vxlfmt\-\_\-load (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-model} $\ast$}]{m, }
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{vxlfmt_8h_a3e866e99642cdbe6e3a2ee31d4e00422}
+Loader of Ken Silverman's .vxl format, thanks to Ken. 
+\begin{DoxyParams}{Parameters}
+{\em m} & destination model (octree will be very slow $\sim$5-\/10 minutes!) \\
+\hline
+{\em path} & to a valid .vxl file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, not 0 when fail and let m unmodified 
+\end{DoxyReturn}

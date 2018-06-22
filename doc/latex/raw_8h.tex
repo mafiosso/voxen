@@ -1,0 +1,29 @@
+\hypertarget{raw_8h}{\section{raw.\-h File Reference}
+\label{raw_8h}\index{raw.\-h@{raw.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVX__model}{V\-X\-\_\-model} $\ast$ \hyperlink{raw_8h_a3875ecf27c3154a3ee70c6d60c9f1ed7}{V\-X\-\_\-model\-\_\-raw\-\_\-new} (\hyperlink{structVX__format}{V\-X\-\_\-format} $\ast$fmt, \hyperlink{structVX__block}{V\-X\-\_\-block} size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{raw_8h_a3875ecf27c3154a3ee70c6d60c9f1ed7}{\index{raw.\-h@{raw.\-h}!V\-X\-\_\-model\-\_\-raw\-\_\-new@{V\-X\-\_\-model\-\_\-raw\-\_\-new}}
+\index{V\-X\-\_\-model\-\_\-raw\-\_\-new@{V\-X\-\_\-model\-\_\-raw\-\_\-new}!raw.h@{raw.\-h}}
+\subsubsection[{V\-X\-\_\-model\-\_\-raw\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-model}$\ast$ V\-X\-\_\-model\-\_\-raw\-\_\-new (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-X\-\_\-format} $\ast$}]{fmt, }
+\item[{{\bf V\-X\-\_\-block}}]{size}
+\end{DoxyParamCaption}
+)}}\label{raw_8h_a3875ecf27c3154a3ee70c6d60c9f1ed7}
+Constructor for raw models. Raw model has some limitations, the load argument has no impact, set\-\_\-voxel and get\-\_\-voxel should write only voxels in respect to model size (otherwise expect undefined behavior. 
+\begin{DoxyParams}{Parameters}
+{\em fmt} & valid pointer to \hyperlink{structVX__format}{V\-X\-\_\-format}, any other will lead to unexpected behavior \\
+\hline
+{\em size} & size of raw model, only w, h, d values will be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valid \hyperlink{structVX__model}{V\-X\-\_\-model} pointer on success, N\-U\-L\-L when fail 
+\end{DoxyReturn}

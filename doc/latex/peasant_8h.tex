@@ -1,0 +1,53 @@
+\hypertarget{peasant_8h}{\section{peasant.\-h File Reference}
+\label{peasant_8h}\index{peasant.\-h@{peasant.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVX__peasant}{V\-X\-\_\-peasant}
+\item 
+struct \hyperlink{structVX__field}{V\-X\-\_\-field}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structVX__peasant}{V\-X\-\_\-peasant} \hyperlink{peasant_8h_a99f0ab97f8fd9a9d5ebd5d67061bc2a9}{V\-X\-\_\-peasant}
+\item 
+typedef struct \hyperlink{structVX__field}{V\-X\-\_\-field} \hyperlink{peasant_8h_ae69411377d31a4fbb829301feee65d90}{V\-X\-\_\-field}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVX__field}{V\-X\-\_\-field} $\ast$ \hyperlink{peasant_8h_a64f0e9bb002d62322696510d4a982b59}{V\-X\-\_\-field\-\_\-new} (V\-X\-\_\-uint32 peasants\-\_\-count)
+\begin{DoxyCompactList}\small\item\em Constructor that creates peasants\-\_\-count-\/1 threads, one job runs in calling thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{peasant_8h_ae69411377d31a4fbb829301feee65d90}{\index{peasant.\-h@{peasant.\-h}!V\-X\-\_\-field@{V\-X\-\_\-field}}
+\index{V\-X\-\_\-field@{V\-X\-\_\-field}!peasant.h@{peasant.\-h}}
+\subsubsection[{V\-X\-\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-field} {\bf V\-X\-\_\-field}}}\label{peasant_8h_ae69411377d31a4fbb829301feee65d90}
+Structure holding set of threads \hypertarget{peasant_8h_a99f0ab97f8fd9a9d5ebd5d67061bc2a9}{\index{peasant.\-h@{peasant.\-h}!V\-X\-\_\-peasant@{V\-X\-\_\-peasant}}
+\index{V\-X\-\_\-peasant@{V\-X\-\_\-peasant}!peasant.h@{peasant.\-h}}
+\subsubsection[{V\-X\-\_\-peasant}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf V\-X\-\_\-peasant} {\bf V\-X\-\_\-peasant}}}\label{peasant_8h_a99f0ab97f8fd9a9d5ebd5d67061bc2a9}
+Undocumented structure for almost inner purposes 
+
+\subsection{Function Documentation}
+\hypertarget{peasant_8h_a64f0e9bb002d62322696510d4a982b59}{\index{peasant.\-h@{peasant.\-h}!V\-X\-\_\-field\-\_\-new@{V\-X\-\_\-field\-\_\-new}}
+\index{V\-X\-\_\-field\-\_\-new@{V\-X\-\_\-field\-\_\-new}!peasant.h@{peasant.\-h}}
+\subsubsection[{V\-X\-\_\-field\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-X\-\_\-field}$\ast$ V\-X\-\_\-field\-\_\-new (
+\begin{DoxyParamCaption}
+\item[{V\-X\-\_\-uint32}]{peasants\-\_\-count}
+\end{DoxyParamCaption}
+)}}\label{peasant_8h_a64f0e9bb002d62322696510d4a982b59}
+
+
+Constructor that creates peasants\-\_\-count-\/1 threads, one job runs in calling thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em peasants\-\_\-count} & is not 0 argument, specifying count of threads \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns \hyperlink{structVX__field}{V\-X\-\_\-field} pointer, or N\-U\-L\-L if error occured or peasants\-\_\-count is 0 
+\end{DoxyReturn}

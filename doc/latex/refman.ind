@@ -1,0 +1,769 @@
+\begin{theindex}
+
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}cam\discretionary {-}{}{}\_\discretionary {-}{}{}thread\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{5}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}file\discretionary {-}{}{}\_\discretionary {-}{}{}node}, 
+		\hyperpage{5}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}file\discretionary {-}{}{}\_\discretionary {-}{}{}node\discretionary {-}{}{}\_\discretionary {-}{}{}leaf}, 
+		\hyperpage{5}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}stack\discretionary {-}{}{}\_\discretionary {-}{}{}item}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {A}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{38}
+  \item {A\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}Y3}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{38}
+  \item {A\discretionary {-}{}{}R\discretionary {-}{}{}G\discretionary {-}{}{}B32}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{12}
+  \item {Asz}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {B}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{38}
+  \item {B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{38}
+  \item {bit\discretionary {-}{}{}\_\discretionary {-}{}{}pp}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+  \item {Bsz}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+  \item {buffer}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{7}
+  \item {byte\discretionary {-}{}{}\_\discretionary {-}{}{}pp}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {C\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}L}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {C\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}T}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {camera.\discretionary {-}{}{}h}, \hyperpage{27}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{27}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera\discretionary {-}{}{}\_\discretionary {-}{}{}new}, 
+		\hyperpage{27}
+  \item {color\discretionary {-}{}{}\_\discretionary {-}{}{}add}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+  \item {color\discretionary {-}{}{}\_\discretionary {-}{}{}mul}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+  \item {colorkey}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+  \item {compile}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{18}
+  \item {custom\discretionary {-}{}{}\_\discretionary {-}{}{}dta}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine}, 
+		\hyperpage{16}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {data}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{7}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{18}
+  \item {deg\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}radians}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+  \item {destroy}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{7}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+  \item {destroy\discretionary {-}{}{}\_\discretionary {-}{}{}p}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+  \item {display.\discretionary {-}{}{}h}, \hyperpage{28}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}V\discretionary {-}{}{}\_\discretionary {-}{}{}null}, 
+		\hyperpage{29}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}V\discretionary {-}{}{}\_\discretionary {-}{}{}sdl}, 
+		\hyperpage{29}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N}, 
+		\hyperpage{28}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}init}, 
+		\hyperpage{28}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lib}, 
+		\hyperpage{29}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine\discretionary {-}{}{}\_\discretionary {-}{}{}default\discretionary {-}{}{}\_\discretionary {-}{}{}init}, 
+		\hyperpage{28}
+  \item {draw}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{8}
+  \item {dump}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {enter}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item {F\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N\discretionary {-}{}{}U\discretionary {-}{}{}M}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {free}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{18}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+  \item {fvector3\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}\_\discretionary {-}{}{}normalize}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+
+  \indexspace
+
+  \item {G}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}pixel}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}voxel}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{18}
+  \item {Gsz}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {h}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {init}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine}, 
+		\hyperpage{16}
+  \item {inspect}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {lighting.\discretionary {-}{}{}h}, \hyperpage{29}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ambient\discretionary {-}{}{}\_\discretionary {-}{}{}light}, 
+		\hyperpage{29}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ambient\discretionary {-}{}{}\_\discretionary {-}{}{}light\discretionary {-}{}{}\_\discretionary {-}{}{}set}, 
+		\hyperpage{30}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}light}, 
+		\hyperpage{29}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}light\discretionary {-}{}{}\_\discretionary {-}{}{}dynamic\discretionary {-}{}{}\_\discretionary {-}{}{}add}, 
+		\hyperpage{30}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}light\discretionary {-}{}{}\_\discretionary {-}{}{}remove}, 
+		\hyperpage{30}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lights\discretionary {-}{}{}\_\discretionary {-}{}{}clear}, 
+		\hyperpage{30}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lights\discretionary {-}{}{}\_\discretionary {-}{}{}count}, 
+		\hyperpage{30}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lights\discretionary {-}{}{}\_\discretionary {-}{}{}enumerate}, 
+		\hyperpage{30}
+  \item {load}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{19}
+  \item {lock\discretionary {-}{}{}\_\discretionary {-}{}{}surface}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}X}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {M\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {make\discretionary {-}{}{}\_\discretionary {-}{}{}surface}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine}, 
+		\hyperpage{16}
+  \item {matrix.\discretionary {-}{}{}h}, \hyperpage{31}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dvector3\discretionary {-}{}{}\_\discretionary {-}{}{}normalize}, 
+		\hyperpage{31}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dvector4\discretionary {-}{}{}\_\discretionary {-}{}{}multiply}, 
+		\hyperpage{31}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}rotate}, 
+		\hyperpage{31}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}rotated}, 
+		\hyperpage{31}
+
+  \indexspace
+
+  \item {native\discretionary {-}{}{}\_\discretionary {-}{}{}surf}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+  \item {nearest\discretionary {-}{}{}\_\discretionary {-}{}{}pow2}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+
+  \indexspace
+
+  \item {oct\discretionary {-}{}{}\_\discretionary {-}{}{}stack\discretionary {-}{}{}\_\discretionary {-}{}{}item}, 
+		\hyperpage{6}
+  \item {octree.\discretionary {-}{}{}h}, \hyperpage{31}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model\discretionary {-}{}{}\_\discretionary {-}{}{}octree\discretionary {-}{}{}\_\discretionary {-}{}{}new}, 
+		\hyperpage{32}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}fill\discretionary {-}{}{}\_\discretionary {-}{}{}region}, 
+		\hyperpage{32}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
+		\hyperpage{32}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}node}, 
+		\hyperpage{32}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}node\discretionary {-}{}{}\_\discretionary {-}{}{}leaf}, 
+		\hyperpage{32}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}\_\discretionary {-}{}{}size}, 
+		\hyperpage{32}
+
+  \indexspace
+
+  \item {P\discretionary {-}{}{}I}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}U\discretionary {-}{}{}B\discretionary {-}{}{}E}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{39}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T3}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}W\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T3}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}W\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T3}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {peasant.\discretionary {-}{}{}h}, \hyperpage{33}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{33}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field\discretionary {-}{}{}\_\discretionary {-}{}{}new}, 
+		\hyperpage{33}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}peasant}, 
+		\hyperpage{33}
+  \item {peasants\discretionary {-}{}{}\_\discretionary {-}{}{}count}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+  \item {position}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{8}
+  \item {present}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {quit}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {R}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {rad\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}degrees}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{43}
+  \item {raw.\discretionary {-}{}{}h}, \hyperpage{34}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}\_\discretionary {-}{}{}new}, 
+		\hyperpage{34}
+  \item {raw\discretionary {-}{}{}\_\discretionary {-}{}{}data}, 
+		\hyperpage{6}
+  \item {ray\discretionary {-}{}{}\_\discretionary {-}{}{}voxel}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{19}
+  \item {redraw}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine}, 
+		\hyperpage{17}
+  \item {rg}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{8}
+  \item {rotation\discretionary {-}{}{}\_\discretionary {-}{}{}matrix}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{8}
+  \item {Rsz}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}pixel}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}voxel}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{19}
+  \item {slab.\discretionary {-}{}{}h}, \hyperpage{34}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}point\discretionary {-}{}{}\_\discretionary {-}{}{}fpu}, 
+		\hyperpage{34}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}out\discretionary {-}{}{}\_\discretionary {-}{}{}point}, 
+		\hyperpage{35}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}out\discretionary {-}{}{}\_\discretionary {-}{}{}point\discretionary {-}{}{}\_\discretionary {-}{}{}fpu}, 
+		\hyperpage{35}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}line\discretionary {-}{}{}\_\discretionary {-}{}{}sort}, 
+		\hyperpage{36}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}permutation\discretionary {-}{}{}\_\discretionary {-}{}{}inspect}, 
+		\hyperpage{35}
+  \item {surface}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item {t}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item {unlock\discretionary {-}{}{}\_\discretionary {-}{}{}surface}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{25}
+
+  \indexspace
+
+  \item {V\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}box}, 
+		\hyperpage{6}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}L\discretionary {-}{}{}\_\discretionary {-}{}{}device}, 
+		\hyperpage{9}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}L\discretionary {-}{}{}\_\discretionary {-}{}{}program}, 
+		\hyperpage{9}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}V\discretionary {-}{}{}\_\discretionary {-}{}{}null}
+    \subitem {display.\discretionary {-}{}{}h}, \hyperpage{29}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}V\discretionary {-}{}{}\_\discretionary {-}{}{}sdl}
+    \subitem {display.\discretionary {-}{}{}h}, \hyperpage{29}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N}
+    \subitem {display.\discretionary {-}{}{}h}, \hyperpage{28}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}header}, 
+		\hyperpage{20}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ambient\discretionary {-}{}{}\_\discretionary {-}{}{}light}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{29}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ambient\discretionary {-}{}{}\_\discretionary {-}{}{}light\discretionary {-}{}{}\_\discretionary {-}{}{}set}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{30}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}block}, 
+		\hyperpage{6}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{7}
+    \subitem {buffer}, \hyperpage{7}
+    \subitem {camera.\discretionary {-}{}{}h}, \hyperpage{27}
+    \subitem {data}, \hyperpage{7}
+    \subitem {destroy}, \hyperpage{7}
+    \subitem {draw}, \hyperpage{8}
+    \subitem {position}, \hyperpage{8}
+    \subitem {rg}, \hyperpage{8}
+    \subitem {rotation\discretionary {-}{}{}\_\discretionary {-}{}{}matrix}, 
+		\hyperpage{8}
+    \subitem {surface}, \hyperpage{8}
+    \subitem {workers}, \hyperpage{8}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera\discretionary {-}{}{}\_\discretionary {-}{}{}new}
+    \subitem {camera.\discretionary {-}{}{}h}, \hyperpage{27}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube}, 
+		\hyperpage{9}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}point\discretionary {-}{}{}\_\discretionary {-}{}{}fpu}
+    \subitem {slab.\discretionary {-}{}{}h}, \hyperpage{34}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}out\discretionary {-}{}{}\_\discretionary {-}{}{}point}
+    \subitem {slab.\discretionary {-}{}{}h}, \hyperpage{35}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}out\discretionary {-}{}{}\_\discretionary {-}{}{}point\discretionary {-}{}{}\_\discretionary {-}{}{}fpu}
+    \subitem {slab.\discretionary {-}{}{}h}, \hyperpage{35}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cubes\discretionary {-}{}{}\_\discretionary {-}{}{}intersection}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{43}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cubes\discretionary {-}{}{}\_\discretionary {-}{}{}intersects\discretionary {-}{}{}\_\discretionary {-}{}{}p}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{43}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dline3}, 
+		\hyperpage{10}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dpoint2}, 
+		\hyperpage{10}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dpoint3}, 
+		\hyperpage{10}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dvector3\discretionary {-}{}{}\_\discretionary {-}{}{}normalize}
+    \subitem {matrix.\discretionary {-}{}{}h}, \hyperpage{31}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dvector4\discretionary {-}{}{}\_\discretionary {-}{}{}multiply}
+    \subitem {matrix.\discretionary {-}{}{}h}, \hyperpage{31}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+    \subitem {destroy}, \hyperpage{11}
+    \subitem {destroy\discretionary {-}{}{}\_\discretionary {-}{}{}p}, 
+		\hyperpage{11}
+    \subitem {enter}, \hyperpage{11}
+    \subitem {peasant.\discretionary {-}{}{}h}, \hyperpage{33}
+    \subitem {peasants\discretionary {-}{}{}\_\discretionary {-}{}{}count}, 
+		\hyperpage{11}
+    \subitem {t}, \hyperpage{11}
+    \subitem {workers}, \hyperpage{11}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field\discretionary {-}{}{}\_\discretionary {-}{}{}new}
+    \subitem {peasant.\discretionary {-}{}{}h}, \hyperpage{33}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fline3}, 
+		\hyperpage{12}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{12}
+    \subitem {A\discretionary {-}{}{}R\discretionary {-}{}{}G\discretionary {-}{}{}B32}, 
+		\hyperpage{12}
+    \subitem {Asz}, \hyperpage{13}
+    \subitem {bit\discretionary {-}{}{}\_\discretionary {-}{}{}pp}, 
+		\hyperpage{13}
+    \subitem {Bsz}, \hyperpage{13}
+    \subitem {byte\discretionary {-}{}{}\_\discretionary {-}{}{}pp}, 
+		\hyperpage{13}
+    \subitem {colorkey}, \hyperpage{13}
+    \subitem {Gsz}, \hyperpage{13}
+    \subitem {Rsz}, \hyperpage{13}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fpoint2}, 
+		\hyperpage{13}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fpoint3}, 
+		\hyperpage{14}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fvector4\discretionary {-}{}{}\_\discretionary {-}{}{}multiply}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{43}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}iline2}, 
+		\hyperpage{14}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}iline3}, 
+		\hyperpage{14}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}init}
+    \subitem {display.\discretionary {-}{}{}h}, \hyperpage{28}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ipoint2}, 
+		\hyperpage{15}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ipoint3}, 
+		\hyperpage{15}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lib}
+    \subitem {display.\discretionary {-}{}{}h}, \hyperpage{29}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lib.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}light}, 
+		\hyperpage{15}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{29}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}light\discretionary {-}{}{}\_\discretionary {-}{}{}dynamic\discretionary {-}{}{}\_\discretionary {-}{}{}add}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{30}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}light\discretionary {-}{}{}\_\discretionary {-}{}{}remove}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{30}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lights\discretionary {-}{}{}\_\discretionary {-}{}{}clear}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{30}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lights\discretionary {-}{}{}\_\discretionary {-}{}{}count}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{30}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}lights\discretionary {-}{}{}\_\discretionary {-}{}{}enumerate}
+    \subitem {lighting.\discretionary {-}{}{}h}, \hyperpage{30}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}line\discretionary {-}{}{}\_\discretionary {-}{}{}sort}
+    \subitem {slab.\discretionary {-}{}{}h}, \hyperpage{36}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine}, 
+		\hyperpage{16}
+    \subitem {custom\discretionary {-}{}{}\_\discretionary {-}{}{}dta}, 
+		\hyperpage{16}
+    \subitem {init}, \hyperpage{16}
+    \subitem {make\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{16}
+    \subitem {quit}, \hyperpage{17}
+    \subitem {redraw}, \hyperpage{17}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}machine\discretionary {-}{}{}\_\discretionary {-}{}{}default\discretionary {-}{}{}\_\discretionary {-}{}{}init}
+    \subitem {display.\discretionary {-}{}{}h}, \hyperpage{28}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}add}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}identity}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}multiply}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}print}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}rotate}
+    \subitem {matrix.\discretionary {-}{}{}h}, \hyperpage{31}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}rotated}
+    \subitem {matrix.\discretionary {-}{}{}h}, \hyperpage{31}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}xrotation}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}yrotation}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}zrotation}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{17}
+    \subitem {compile}, \hyperpage{18}
+    \subitem {data}, \hyperpage{18}
+    \subitem {dump}, \hyperpage{18}
+    \subitem {free}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}voxel}, 
+		\hyperpage{18}
+    \subitem {inspect}, \hyperpage{19}
+    \subitem {load}, \hyperpage{19}
+    \subitem {present}, \hyperpage{19}
+    \subitem {ray\discretionary {-}{}{}\_\discretionary {-}{}{}voxel}, 
+		\hyperpage{19}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}voxel}, 
+		\hyperpage{19}
+    \subitem {voxel.\discretionary {-}{}{}h}, \hyperpage{36}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model\discretionary {-}{}{}\_\discretionary {-}{}{}octree\discretionary {-}{}{}\_\discretionary {-}{}{}new}
+    \subitem {octree.\discretionary {-}{}{}h}, \hyperpage{32}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}\_\discretionary {-}{}{}new}
+    \subitem {raw.\discretionary {-}{}{}h}, \hyperpage{34}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ms\discretionary {-}{}{}\_\discretionary {-}{}{}block}, 
+		\hyperpage{20}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}fill\discretionary {-}{}{}\_\discretionary {-}{}{}region}
+    \subitem {octree.\discretionary {-}{}{}h}, \hyperpage{32}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
+		\hyperpage{20}
+    \subitem {octree.\discretionary {-}{}{}h}, \hyperpage{32}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}node}, 
+		\hyperpage{21}
+    \subitem {octree.\discretionary {-}{}{}h}, \hyperpage{32}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}node\discretionary {-}{}{}\_\discretionary {-}{}{}leaf}, 
+		\hyperpage{21}
+    \subitem {octree.\discretionary {-}{}{}h}, \hyperpage{32}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}oct\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}\_\discretionary {-}{}{}size}
+    \subitem {octree.\discretionary {-}{}{}h}, \hyperpage{32}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}peasant}, 
+		\hyperpage{22}
+    \subitem {peasant.\discretionary {-}{}{}h}, \hyperpage{33}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}permutation\discretionary {-}{}{}\_\discretionary {-}{}{}inspect}
+    \subitem {slab.\discretionary {-}{}{}h}, \hyperpage{35}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}point\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}p}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}promise}, 
+		\hyperpage{22}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}raw}, 
+		\hyperpage{22}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}rect}, 
+		\hyperpage{22}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}stream}, 
+		\hyperpage{23}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{23}
+    \subitem {custom\discretionary {-}{}{}\_\discretionary {-}{}{}dta}, 
+		\hyperpage{24}
+    \subitem {free}, \hyperpage{24}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}pixel}, 
+		\hyperpage{24}
+    \subitem {h}, \hyperpage{24}
+    \subitem {lock\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{24}
+    \subitem {native\discretionary {-}{}{}\_\discretionary {-}{}{}surf}, 
+		\hyperpage{24}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}pixel}, 
+		\hyperpage{24}
+    \subitem {unlock\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{25}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{41}
+    \subitem {w}, \hyperpage{25}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}vector4\discretionary {-}{}{}\_\discretionary {-}{}{}print}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}vxlfmt\discretionary {-}{}{}\_\discretionary {-}{}{}load}
+    \subitem {vxlfmt.\discretionary {-}{}{}h}, \hyperpage{46}
+  \item {voxel.\discretionary {-}{}{}h}, \hyperpage{36}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}model}, 
+		\hyperpage{36}
+  \item {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{36}
+    \subitem {A}, \hyperpage{38}
+    \subitem {A\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}Y3}, 
+		\hyperpage{38}
+    \subitem {B}, \hyperpage{38}
+    \subitem {B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K}, 
+		\hyperpage{38}
+    \subitem {C\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
+		\hyperpage{39}
+    \subitem {C\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}T}, 
+		\hyperpage{39}
+    \subitem {color\discretionary {-}{}{}\_\discretionary {-}{}{}add}, 
+		\hyperpage{42}
+    \subitem {color\discretionary {-}{}{}\_\discretionary {-}{}{}mul}, 
+		\hyperpage{42}
+    \subitem {deg\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}radians}, 
+		\hyperpage{42}
+    \subitem {F\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N\discretionary {-}{}{}U\discretionary {-}{}{}M}, 
+		\hyperpage{39}
+    \subitem {fvector3\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}\_\discretionary {-}{}{}normalize}, 
+		\hyperpage{42}
+    \subitem {G}, \hyperpage{39}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X}, 
+		\hyperpage{39}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E}, 
+		\hyperpage{39}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{39}
+    \subitem {M\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X}, 
+		\hyperpage{39}
+    \subitem {nearest\discretionary {-}{}{}\_\discretionary {-}{}{}pow2}, 
+		\hyperpage{42}
+    \subitem {P\discretionary {-}{}{}I}, \hyperpage{39}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K}, 
+		\hyperpage{39}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}U\discretionary {-}{}{}B\discretionary {-}{}{}E}, 
+		\hyperpage{39}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K}, 
+		\hyperpage{40}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T3}, 
+		\hyperpage{40}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}W\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T3}, 
+		\hyperpage{40}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}W\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T3}, 
+		\hyperpage{40}
+    \subitem {R}, \hyperpage{40}
+    \subitem {rad\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}degrees}, 
+		\hyperpage{43}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}block}, 
+		\hyperpage{40}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cube}, 
+		\hyperpage{40}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cubes\discretionary {-}{}{}\_\discretionary {-}{}{}intersection}, 
+		\hyperpage{43}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}cubes\discretionary {-}{}{}\_\discretionary {-}{}{}intersects\discretionary {-}{}{}\_\discretionary {-}{}{}p}, 
+		\hyperpage{43}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dline3}, 
+		\hyperpage{40}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dpoint2}, 
+		\hyperpage{40}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}dpoint3}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fline3}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}format}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fpoint2}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fpoint3}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}fvector4\discretionary {-}{}{}\_\discretionary {-}{}{}multiply}, 
+		\hyperpage{43}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}iline2}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}iline3}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ipoint2}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ipoint3}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}add}, 
+		\hyperpage{44}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}identity}, 
+		\hyperpage{44}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}multiply}, 
+		\hyperpage{44}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}print}, 
+		\hyperpage{44}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}xrotation}, 
+		\hyperpage{44}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}yrotation}, 
+		\hyperpage{44}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}matrix4\discretionary {-}{}{}\_\discretionary {-}{}{}zrotation}, 
+		\hyperpage{45}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}ms\discretionary {-}{}{}\_\discretionary {-}{}{}block}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}point\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}cube\discretionary {-}{}{}\_\discretionary {-}{}{}p}, 
+		\hyperpage{45}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}rect}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{41}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}vector4\discretionary {-}{}{}\_\discretionary {-}{}{}print}, 
+		\hyperpage{45}
+    \subitem {X}, \hyperpage{40}
+    \subitem {Y}, \hyperpage{40}
+    \subitem {Z}, \hyperpage{40}
+  \item {vxl\discretionary {-}{}{}\_\discretionary {-}{}{}header}, 
+		\hyperpage{25}
+  \item {vxlfmt.\discretionary {-}{}{}h}, \hyperpage{46}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}vxlfmt\discretionary {-}{}{}\_\discretionary {-}{}{}load}, 
+		\hyperpage{46}
+
+  \indexspace
+
+  \item {w}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}surface}, 
+		\hyperpage{25}
+  \item {workers}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}camera}, 
+		\hyperpage{8}
+    \subitem {V\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}field}, 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item {X}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+
+  \indexspace
+
+  \item {Y}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+
+  \indexspace
+
+  \item {Z}
+    \subitem {vx\discretionary {-}{}{}\_\discretionary {-}{}{}fundamental.\discretionary {-}{}{}h}, 
+		\hyperpage{40}
+
+\end{theindex}

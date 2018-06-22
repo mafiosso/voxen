@@ -1,0 +1,86 @@
+\hypertarget{matrix_8h}{\section{matrix.\-h File Reference}
+\label{matrix_8h}\index{matrix.\-h@{matrix.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{matrix_8h_ab798ae6785c97b4208ef1634a118c413}{V\-X\-\_\-dvector3\-\_\-normalize} (double inout\mbox{[}3\mbox{]})
+\item 
+void \hyperlink{matrix_8h_a0fcaa5d2fa13e3e56fe743975829ec0a}{V\-X\-\_\-dvector4\-\_\-multiply} (double outv\mbox{[}4\mbox{]}, double matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double vector\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{matrix_8h_ad481fa8451e1817549cb51786a3691bd}{V\-X\-\_\-matrix4\-\_\-rotate} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float v\mbox{[}3\mbox{]}, float angle)
+\item 
+void \hyperlink{matrix_8h_a33b6874e862c808beb23fcdbbc20fc7a}{V\-X\-\_\-matrix4\-\_\-rotated} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double v\mbox{[}3\mbox{]}, double angle)
+\item 
+\hypertarget{matrix_8h_a802d67b4dc3ee50a80c54751a4950d74}{void {\bfseries V\-X\-\_\-matrix4\-\_\-lookat} (double out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, float at\mbox{[}3\mbox{]}, float pos\mbox{[}3\mbox{]}, float up\mbox{[}3\mbox{]})}\label{matrix_8h_a802d67b4dc3ee50a80c54751a4950d74}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{matrix_8h_ab798ae6785c97b4208ef1634a118c413}{\index{matrix.\-h@{matrix.\-h}!V\-X\-\_\-dvector3\-\_\-normalize@{V\-X\-\_\-dvector3\-\_\-normalize}}
+\index{V\-X\-\_\-dvector3\-\_\-normalize@{V\-X\-\_\-dvector3\-\_\-normalize}!matrix.h@{matrix.\-h}}
+\subsubsection[{V\-X\-\_\-dvector3\-\_\-normalize}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-dvector3\-\_\-normalize (
+\begin{DoxyParamCaption}
+\item[{double}]{inout\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{matrix_8h_ab798ae6785c97b4208ef1634a118c413}
+Normalize inout double raw vector. 
+\begin{DoxyParams}{Parameters}
+{\em inout} & double raw vector, after execution it is the same vector of length 1.\-0f \\
+\hline
+\end{DoxyParams}
+\hypertarget{matrix_8h_a0fcaa5d2fa13e3e56fe743975829ec0a}{\index{matrix.\-h@{matrix.\-h}!V\-X\-\_\-dvector4\-\_\-multiply@{V\-X\-\_\-dvector4\-\_\-multiply}}
+\index{V\-X\-\_\-dvector4\-\_\-multiply@{V\-X\-\_\-dvector4\-\_\-multiply}!matrix.h@{matrix.\-h}}
+\subsubsection[{V\-X\-\_\-dvector4\-\_\-multiply}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-dvector4\-\_\-multiply (
+\begin{DoxyParamCaption}
+\item[{double}]{outv\mbox{[}4\mbox{]}, }
+\item[{double}]{matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{vector\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{matrix_8h_a0fcaa5d2fa13e3e56fe743975829ec0a}
+Multiplies matrix matrix with vector in double precision, like this matrix$\ast$vector and stores output in outv. 
+\begin{DoxyParams}{Parameters}
+{\em outv} & output vector in format float\mbox{[}4\mbox{]} \\
+\hline
+{\em matrix} & matrix in format double\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} \\
+\hline
+{\em vector} & vector in format double\mbox{[}4\mbox{]} \\
+\hline
+\end{DoxyParams}
+\hypertarget{matrix_8h_ad481fa8451e1817549cb51786a3691bd}{\index{matrix.\-h@{matrix.\-h}!V\-X\-\_\-matrix4\-\_\-rotate@{V\-X\-\_\-matrix4\-\_\-rotate}}
+\index{V\-X\-\_\-matrix4\-\_\-rotate@{V\-X\-\_\-matrix4\-\_\-rotate}!matrix.h@{matrix.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-rotate}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-rotate (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{float}]{v\mbox{[}3\mbox{]}, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{matrix_8h_ad481fa8451e1817549cb51786a3691bd}
+Initialize out to a matrix of rotation around an arbitrary axis (single precision) v and angle. 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em v} & arbitrary axis \\
+\hline
+{\em angle} & angle in radians \\
+\hline
+\end{DoxyParams}
+\hypertarget{matrix_8h_a33b6874e862c808beb23fcdbbc20fc7a}{\index{matrix.\-h@{matrix.\-h}!V\-X\-\_\-matrix4\-\_\-rotated@{V\-X\-\_\-matrix4\-\_\-rotated}}
+\index{V\-X\-\_\-matrix4\-\_\-rotated@{V\-X\-\_\-matrix4\-\_\-rotated}!matrix.h@{matrix.\-h}}
+\subsubsection[{V\-X\-\_\-matrix4\-\_\-rotated}]{\setlength{\rightskip}{0pt plus 5cm}void V\-X\-\_\-matrix4\-\_\-rotated (
+\begin{DoxyParamCaption}
+\item[{double}]{out\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, }
+\item[{double}]{v\mbox{[}3\mbox{]}, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{matrix_8h_a33b6874e862c808beb23fcdbbc20fc7a}
+Initialize out to a matrix of rotation around an arbitrary axis (double precision) v and angle. 
+\begin{DoxyParams}{Parameters}
+{\em out} & output matrix \\
+\hline
+{\em v} & arbitrary axis \\
+\hline
+{\em angle} & angle in radians \\
+\hline
+\end{DoxyParams}

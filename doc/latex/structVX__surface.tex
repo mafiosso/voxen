@@ -1,0 +1,107 @@
+\hypertarget{structVX__surface}{\section{V\-X\-\_\-surface Struct Reference}
+\label{structVX__surface}\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}}
+}
+
+
+{\ttfamily \#include $<$vx\-\_\-fundamental.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{structVX__surface_af05225cd11073b92fa78b008f6291afc}{free} )(struct \hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$)
+\item 
+V\-X\-\_\-uint32($\ast$ \hyperlink{structVX__surface_a313aa54a57337a8f8070d93366f7bf9a}{get\-\_\-pixel} )(struct \hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y)
+\item 
+void $\ast$($\ast$ \hyperlink{structVX__surface_a869959bbf25e863c3141373df651632d}{lock\-\_\-surface} )(struct \hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$)
+\item 
+void($\ast$ \hyperlink{structVX__surface_a6799675cf75bf7566a83a07b3c6bc905}{unlock\-\_\-surface} )(struct \hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$)
+\item 
+void($\ast$ \hyperlink{structVX__surface_ac748fac37c089a449fad15c684af9a08}{set\-\_\-pixel} )(struct \hyperlink{structVX__surface}{V\-X\-\_\-surface} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y, V\-X\-\_\-uint32 color)
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__surface_a5e708ffe93416a4cb992f0decb6b739c}{w}
+\item 
+V\-X\-\_\-uint32 \hyperlink{structVX__surface_aceb5bfc1d1c476822769082e329b8980}{h}
+\item 
+void $\ast$ \hyperlink{structVX__surface_a8e6a8530748746a2803534d1ea761190}{native\-\_\-surf}
+\item 
+void $\ast$ \hyperlink{structVX__surface_a5faa56b99a0541b5e61db3a04d5aa6bc}{custom\-\_\-dta}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+2\-D surface device independent interface. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structVX__surface_a5faa56b99a0541b5e61db3a04d5aa6bc}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!custom\-\_\-dta@{custom\-\_\-dta}}
+\index{custom\-\_\-dta@{custom\-\_\-dta}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{custom\-\_\-dta}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ V\-X\-\_\-surface\-::custom\-\_\-dta}}\label{structVX__surface_a5faa56b99a0541b5e61db3a04d5aa6bc}
+pointer for any other data used by driver, user may modify this only if writing driver \hypertarget{structVX__surface_af05225cd11073b92fa78b008f6291afc}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!free@{free}}
+\index{free@{free}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-surface\-::free)(struct {\bf V\-X\-\_\-surface} $\ast$)}}\label{structVX__surface_af05225cd11073b92fa78b008f6291afc}
+Destructor of surface. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__surface_a313aa54a57337a8f8070d93366f7bf9a}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!get\-\_\-pixel@{get\-\_\-pixel}}
+\index{get\-\_\-pixel@{get\-\_\-pixel}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{get\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32($\ast$ V\-X\-\_\-surface\-::get\-\_\-pixel)(struct {\bf V\-X\-\_\-surface} $\ast$, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y)}}\label{structVX__surface_a313aa54a57337a8f8070d93366f7bf9a}
+Returns pixel in A\-R\-G\-B32 format from x, y position. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em x} & x position of pixel \\
+\hline
+{\em y} & y position of pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\-R\-G\-B32 color 
+\end{DoxyReturn}
+\hypertarget{structVX__surface_aceb5bfc1d1c476822769082e329b8980}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!h@{h}}
+\index{h@{h}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-surface\-::h}}\label{structVX__surface_aceb5bfc1d1c476822769082e329b8980}
+height of surface \hypertarget{structVX__surface_a869959bbf25e863c3141373df651632d}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!lock\-\_\-surface@{lock\-\_\-surface}}
+\index{lock\-\_\-surface@{lock\-\_\-surface}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{lock\-\_\-surface}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$($\ast$ V\-X\-\_\-surface\-::lock\-\_\-surface)(struct {\bf V\-X\-\_\-surface} $\ast$)}}\label{structVX__surface_a869959bbf25e863c3141373df651632d}
+Locks surface for writing, returns raw pointer to image data. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+raw pointer to image data 
+\end{DoxyReturn}
+\hypertarget{structVX__surface_a8e6a8530748746a2803534d1ea761190}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!native\-\_\-surf@{native\-\_\-surf}}
+\index{native\-\_\-surf@{native\-\_\-surf}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{native\-\_\-surf}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ V\-X\-\_\-surface\-::native\-\_\-surf}}\label{structVX__surface_a8e6a8530748746a2803534d1ea761190}
+pointer to device dependent surface, user may modify this only if writing driver \hypertarget{structVX__surface_ac748fac37c089a449fad15c684af9a08}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!set\-\_\-pixel@{set\-\_\-pixel}}
+\index{set\-\_\-pixel@{set\-\_\-pixel}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{set\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-surface\-::set\-\_\-pixel)(struct {\bf V\-X\-\_\-surface} $\ast$self, V\-X\-\_\-uint32 x, V\-X\-\_\-uint32 y, V\-X\-\_\-uint32 color)}}\label{structVX__surface_ac748fac37c089a449fad15c684af9a08}
+Sets pixel to color (A\-R\-G\-B32 format) on x, y position. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em x} & x position of pixel \\
+\hline
+{\em y} & y position of pixel \\
+\hline
+{\em color} & valid A\-R\-G\-B32 color \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__surface_a6799675cf75bf7566a83a07b3c6bc905}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!unlock\-\_\-surface@{unlock\-\_\-surface}}
+\index{unlock\-\_\-surface@{unlock\-\_\-surface}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{unlock\-\_\-surface}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ V\-X\-\_\-surface\-::unlock\-\_\-surface)(struct {\bf V\-X\-\_\-surface} $\ast$)}}\label{structVX__surface_a6799675cf75bf7566a83a07b3c6bc905}
+Unlocks surface for writing, returns raw pointer to image data. 
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{structVX__surface_a5e708ffe93416a4cb992f0decb6b739c}{\index{V\-X\-\_\-surface@{V\-X\-\_\-surface}!w@{w}}
+\index{w@{w}!VX_surface@{V\-X\-\_\-surface}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}V\-X\-\_\-uint32 V\-X\-\_\-surface\-::w}}\label{structVX__surface_a5e708ffe93416a4cb992f0decb6b739c}
+width of surface 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vx__fundamental_8h}{vx\-\_\-fundamental.\-h}\end{DoxyCompactItemize}
