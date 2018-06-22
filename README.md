@@ -21,6 +21,7 @@ Prerequisities:
 Build:
 ```
   make
+  cd conversion_tool && make && cd ..
 ```
 
 There are several other make targets:
@@ -31,7 +32,9 @@ There are several other make targets:
 * make sse.
 
 ## Running
-
+* testapp - ./testapp/testapp
+* voxconv - ./conversion_tool/voxconv (help is printed)
+* library binaries are placed in voxen/bin/ after successful build.
 
 
 

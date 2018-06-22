@@ -35,6 +35,10 @@
 *.i*86
 *.x86_64
 *.hex
+tests/testvoxen
+conversion_tool/voxconv
+testapp/testapp
+
 
 # Debug files
 *.dSYM/
