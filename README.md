@@ -1,6 +1,8 @@
 # voxen
 Voxel engine based on octal trees and adaptive octal trees.
 
+![alt Model from Blood](https://github.com/mafiosso/voxen/blob/master/pr/blood_tombstone.png?raw=true)
+
 ## Key features:
 * Implements Raw voxel model - analogy to surface representation.
 * Implements Octal tree.
@@ -36,6 +38,7 @@ There are several other make targets:
 * testapp - ./testapp/testapp
 * voxconv - ./conversion_tool/voxconv (help is printed)
 * library binaries are placed in voxen/bin/ after successful build.
+
 
 
 
