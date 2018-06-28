@@ -1,7 +1,7 @@
 # voxen
 Voxel engine based on octal trees and adaptive octal trees.
 
-![alt Model from Blood](https://github.com/mafiosso/voxen/blob/master/pr/blood_tombstone.png?raw=true)
+![A model from Blood](https://github.com/mafiosso/voxen/blob/master/pr/blood_tombstone.png?raw=true)
 
 ## Key features:
 * Implements Raw voxel model - analogy to surface representation.
