@@ -17,6 +17,7 @@ Prerequisities:
 * libsdl-image1.2-dev
 * gcc, make
 * unix system (Windows port not completed yet)
+* 32-bit system (not all features implemented well for AMD64 yet)
 
 Build:
 ```

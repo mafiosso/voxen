@@ -49,6 +49,7 @@
 
 #define VX_int32  int32_t
 #define VX_int16 int16_t
+#define VX_uint16 uint16_t
 
 #define VX_byte   uint8_t
 

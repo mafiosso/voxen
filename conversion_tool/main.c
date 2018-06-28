@@ -77,6 +77,7 @@ void print_version()
 #define VXL 2
 #define SET 3
 #define AOCT 4
+#define KVX 5
 
 int translate_type(char *type)
 {
@@ -90,6 +91,9 @@ int translate_type(char *type)
         return SET;
     if (!strcmp(type, "-aoct"))
         return AOCT;
+    if (!strcmp(type, "-kvx"))
+        return KVX;
+
     return -1;
 }
 
@@ -279,6 +283,12 @@ int main(int argc, char *argv[])
         in[1] = NULL;
         in[0] = strdup(argv[idx++]);
         break;
+    case KVX:
+        check_idx(idx, argc);
+        in = malloc(sizeof(char *) * 2);
+        in[1] = NULL;
+        in[0] = strdup(argv[idx++]);
+        break;
     default:
         printf("err: unknown input type\n");
         return -1;
@@ -343,6 +353,17 @@ int main(int argc, char *argv[])
         break;
     case SET:
         m_in = set_to_model(in, in_cnt);
+        break;
+    case KVX:
+        {
+            VX_block b = { 0, 0, 0, 512, 512, 64 };
+            m_in = VX_model_raw_new(&FMT_ARGB32, b);
+            if (VX_kvxfmt_load(m_in, in[0])) {
+                printf("err: cant load kvx file %s\n", in[0]);
+                m_in->free(m_in);
+                return -1;
+            }            
+        }
         break;
     default:
         printf("err: this shouldnt be - instruction memory corruption?\n");

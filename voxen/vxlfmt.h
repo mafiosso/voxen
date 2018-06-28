@@ -11,6 +11,7 @@
  * \param path to a valid .vxl file
  * \return 0 on success, not 0 when fail and let m unmodified
 */
+VX_int32 VX_kvxfmt_load(VX_model * m , const char * path);
 VX_int32 VX_vxlfmt_load(VX_model * m , const char * path);
 
 #endif
