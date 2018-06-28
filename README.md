@@ -39,6 +39,13 @@ There are several other make targets:
 * voxconv - ./conversion_tool/voxconv (help is printed)
 * library binaries are placed in voxen/bin/ after successful build.
 
+## Where to find models
+* Extract a .RFF file from Blood game (.KVX files contains voxel models), use tool (http://advsys.net/ken/kbarf.zip).
+* Get CT or NMR scan as image sequence.
+* Draw custom models and export via Goxel (https://github.com/guillaumechereau/goxel).
+* Download models in .vxl format (Voxlap, Voxelstein) and use voxconv (http://voxelstein3d.sourceforge.net/).
+
+
 
 
 
