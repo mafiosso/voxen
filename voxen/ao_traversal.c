@@ -29,7 +29,8 @@ static void * ao_addr( VX_oct_node * root ,
                                   addr[Y] - cube_point[Y] , 
                                   addr[Z] - cube_point[Z] };
             VX_byte * raw = (VX_byte*)root;
-            *type = AOCT_RAW;            
+            *type = AOCT_RAW;
+            cube_point[3] = hw;
             return raw + ((1 + ((int)dpos[Z] * (int)hw * (int)hw) +
                            ((int)dpos[Y] * (int)hw) + (int)dpos[X]) * 4);
         }
@@ -81,14 +82,16 @@ static inline VX_uint32 oct_step_fpu( VX_aoct_node * node ,
         point_out[ret] -= 0.0001f;
     }
 
-    return node->color;
+    return (node && node->color) || 0x0;
 }
 
-static VX_uint32 raw_step( VX_uint32 * chunk , VX_uint32 sz , 
+static VX_uint32 raw_step( VX_uint32 * chunk , 
                            float bbox[4] ,
                            float dcam[3] , float out[3] ){
     /* do breseham */
     /* TODO: make better grid traversal */
+    VX_uint32 sz = bbox[3];
+    
     float x = dcam[X];
     float y = dcam[Y];
     float z = dcam[Z];
@@ -102,15 +105,16 @@ static VX_uint32 raw_step( VX_uint32 * chunk , VX_uint32 sz ,
     float stepy = ylen / len;
     float stepz = zlen / len;
     VX_uint32 powsz = sz*sz;
+    VX_uint32 clr;
 
     for( int i = 0 ; i < (int)len ; i++ ){
-        VX_uint32 clr = chunk[ (VX_uint32)(((bbox[Z]-z)*powsz) + ((bbox[Y]-y)*sz)
+        clr = chunk[ (VX_uint32)(((bbox[Z]-z)*powsz) + ((bbox[Y]-y)*sz)
                                 + (bbox[X] - x)) ];
         if( !(clr & 0x00FFFFFF) ){
             dcam[X] = x;
             dcam[Y] = y;
             dcam[Z] = z;
-            return clr;
+            goto end;
         }
         x -= stepx;
         y -= stepy;
@@ -120,7 +124,13 @@ static VX_uint32 raw_step( VX_uint32 * chunk , VX_uint32 sz ,
     dcam[X] = x;
     dcam[Y] = y;
     dcam[Z] = z;
-    return 0xFF000000;
+    clr = 0xFF000000;
+end:
+    x -= stepx;
+    y -= stepy;
+    z -= stepz;
+
+    return clr;    
 }
 
 VX_uint32 VX_ao_ray( VX_model * self ,
@@ -158,9 +168,13 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 
         if( type == AOCT_RAW ){
             /* Do grid traversal */
-            return 0x0000ff00;
+            /*return 0x0000ff00;*/
+             c = raw_step( (VX_araw_node*)node+1,
+                          cube,
+                          dcam,
+                          out);
         }
-        else{
+        else {
             /* do octree step */
             c = oct_step_fpu( (VX_aoct_node*)node ,
                           dcam,
