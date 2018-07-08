@@ -85,7 +85,7 @@ static inline VX_uint32 oct_step_fpu( VX_aoct_node * node ,
     return (node && node->color) || 0x0;
 }
 
-static VX_uint32 raw_step( VX_uint32 * chunk , 
+static VX_uint32 raw_step( VX_model * model , 
                            float bbox[4] ,
                            float dcam[3] , float out[3] ){
     /* do breseham */
@@ -106,11 +106,13 @@ static VX_uint32 raw_step( VX_uint32 * chunk ,
     float stepz = zlen / len;
     VX_uint32 powsz = sz*sz;
     VX_uint32 clr;
-
+    VX_uint32 lod = 1000;
     for( int i = 0 ; i < (int)len ; i++ ){
-        clr = chunk[ (VX_uint32)(((bbox[Z]-z)*powsz) + ((bbox[Y]-y)*sz)
-                                + (bbox[X] - x)) ];
-        if( !(clr & 0x00FFFFFF) ){
+        /*clr = chunk[ (VX_uint32)(((z-bbox[Z])*powsz) + ((y-bbox[Y])*sz)
+          + (x-bbox[X])) ];*/
+        VX_byte * rclr = model->get_voxel(model, x,y,z, &lod);
+        clr = model->fmt->ARGB32( model->fmt, rclr );
+        if( (clr & 0x00FFFFFF) ){
             dcam[X] = x;
             dcam[Y] = y;
             dcam[Z] = z;
@@ -146,7 +148,7 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 
     float dcam[3] = {idcam[X] , idcam[Y] , idcam[Z]};
     float out[3];
-    VX_uint32 c;
+    VX_uint32 c = 0x0;
     float cube[4] = {0,0,0, hw};
 
     if( !POINT_IN_CUBE_FPU_P( cube , idcam ) ){
@@ -169,12 +171,12 @@ VX_uint32 VX_ao_ray( VX_model * self ,
         if( type == AOCT_RAW ){
             /* Do grid traversal */
             /*return 0x0000ff00;*/
-             c = raw_step( (VX_araw_node*)node+1,
+            c = raw_step( self, //(VX_uint32*)(((VX_byte*)node)+1),
                           cube,
                           dcam,
                           out);
         }
-        else {
+        else if( type == AOCT_EMPTY ){
             /* do octree step */
             c = oct_step_fpu( (VX_aoct_node*)node ,
                           dcam,
@@ -183,8 +185,11 @@ VX_uint32 VX_ao_ray( VX_model * self ,
                           cube,
                           bperm);
         }
+
+        if( type == AOCT_NODE ){
+        }
         
-        if( c ){ break;}
+        if( c ){ break;} /* mask causes endless looping */
         if( !(out[X] < hw && out[Y] < hw && out[Z] < hw &&
               out[X] >= 0.0f && out[Y] >= 0.0f && out[Z] >= 0.0f ))
             return 0;
