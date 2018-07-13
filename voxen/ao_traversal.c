@@ -25,14 +25,9 @@ static void * ao_addr( VX_oct_node * root ,
     {
         if( (root->flags & (1 << 31) ) ){
             /* its a raw subnode */
-            VX_uint32 dpos[3] = { addr[X] - cube_point[X] ,
-                                  addr[Y] - cube_point[Y] , 
-                                  addr[Z] - cube_point[Z] };
-            VX_byte * raw = (VX_byte*)root;
             *type = AOCT_RAW;
             cube_point[3] = hw;
-            return raw + ((1 + ((int)dpos[Z] * (int)hw * (int)hw) +
-                           ((int)dpos[Y] * (int)hw) + (int)dpos[X]) * 4);
+            return root;
         }
 
         hw = hw * 0.5f;
@@ -85,10 +80,9 @@ static inline VX_uint32 oct_step_fpu( VX_aoct_node * node ,
     return (node && node->color) || 0x0;
 }
 
-static VX_uint32 raw_step( VX_model * model , 
+static VX_uint32 raw_step( VX_araw_node * node , VX_model * model,
                            float * bbox ,
                            float * dcam , float * out ){
-    /* do breseham */
     /* TODO: make better grid traversal */
     VX_uint32 sz = bbox[3];
 
@@ -107,10 +101,10 @@ static VX_uint32 raw_step( VX_model * model ,
     VX_uint32 clr;
     VX_uint32 lod = 1000;
     for( int i = 0 ; POINT_IN_CUBE_FPU_P( bbox , p ) ; i++ ){
-        /*clr = chunk[ (VX_uint32)(((z-bbox[Z])*powsz) + ((y-bbox[Y])*sz)
-          + (x-bbox[X])) ];*/
         VX_byte * rclr = model->get_voxel(model, p[X], p[Y], p[Z], &lod);
+
         clr = model->fmt->ARGB32( model->fmt, rclr );
+
         if( (clr & 0x00FFFFFF) ){
             goto end;
         }
@@ -155,8 +149,6 @@ VX_uint32 VX_ao_ray( VX_model * self ,
             return 0;
     }
 
-
-
     do{
         VX_uint32 type;
         void * node = ao_addr( self->root , hw,
@@ -166,7 +158,7 @@ VX_uint32 VX_ao_ray( VX_model * self ,
             /* Do grid traversal */
             //return 0x0000ff00;
             APPLY3( out , n_ray , += );
-            c = raw_step( self, //(VX_uint32*)(((VX_byte*)node)+1),
+            c = raw_step( node, self,
                           cube,
                           dcam,
                           out);

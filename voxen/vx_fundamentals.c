@@ -75,7 +75,7 @@ int VX_cores_count() {
     }
     return count;
 #else
-    return sysconf(_SC_NPROCESSORS_ONLN);
+    return sysconf(_SC_NPROCESSORS_CONF);
 #endif
 }
 
@@ -83,6 +83,7 @@ int VX_cores_count() {
    to get writing driver more user-friendly */
 void VX_machine_default_init( VX_machine * m ){
     m->cores_count = VX_cores_count();
+    printf("INIT successful, cores count: %d\n", m->cores_count);
 }
 
 
