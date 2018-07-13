@@ -11,13 +11,10 @@
 
 
 static void * ao_addr( VX_oct_node * root ,
-                          float hw,
-                          float * addr,
-                          float * cube_point,
-                          VX_uint32 * type )
+                       float * addr,
+                       float * cube_point,
+                       VX_uint32 * type )
 {
-    cube_point[X] = 0.0f; cube_point[Y] = 0.0f; cube_point[Z] = 0.0f;
-    cube_point[3] = hw;
     VX_uint32 order;
     register VX_byte * pord = (VX_byte*)&order;
 
@@ -26,29 +23,26 @@ static void * ao_addr( VX_oct_node * root ,
         if( (root->flags & (1 << 31) ) ){
             /* its a raw subnode */
             *type = AOCT_RAW;
-            cube_point[3] = hw;
             return root;
         }
 
-        hw = hw * 0.5f;
-        pord[Z] = (addr[Z] >= (cube_point[Z] + hw));
-        pord[Y] = (addr[Y] >= (cube_point[Y] + hw));
-        pord[X] = (addr[X] >= (cube_point[X] + hw));
+        cube_point[3] = cube_point[3] * 0.5f;
+        pord[Z] = (addr[Z] >= (cube_point[Z] + cube_point[3]));
+        pord[Y] = (addr[Y] >= (cube_point[Y] + cube_point[3]));
+        pord[X] = (addr[X] >= (cube_point[X] + cube_point[3]));
 
-        cube_point[X] += ( pord[X] ? hw : 0.0f );
-        cube_point[Y] += ( pord[Y] ? hw : 0.0f );
-        cube_point[Z] += ( pord[Z] ? hw : 0.0f );
+        cube_point[X] += ( pord[X] ? cube_point[3] : 0.0f );
+        cube_point[Y] += ( pord[Y] ? cube_point[3] : 0.0f );
+        cube_point[Z] += ( pord[Z] ? cube_point[3] : 0.0f );
 
         root = root->childs[ (pord[Z]<<2) | (pord[Y]<<1) | pord[X] ];
 
         if( !root ){
-            cube_point[3] = hw;
             *type = AOCT_EMPTY;
             return NULL;
         }
     }
 
-    cube_point[3] = hw;
     *type = AOCT_NODE;
     return root;
 }
@@ -100,10 +94,18 @@ static VX_uint32 raw_step( VX_araw_node * node , VX_model * model,
     VX_uint32 powsz = sz*sz;
     VX_uint32 clr;
     VX_uint32 lod = 1000;
-    for( int i = 0 ; POINT_IN_CUBE_FPU_P( bbox , p ) ; i++ ){
-        VX_byte * rclr = model->get_voxel(model, p[X], p[Y], p[Z], &lod);
 
-        clr = model->fmt->ARGB32( model->fmt, rclr );
+    int i = 0;
+    
+    while( POINT_IN_CUBE_FPU_P( bbox , p ) ){
+        VX_byte * rclr = model->get_voxel(model, p[X], p[Y], p[Z], &lod);
+        VX_uint32 x = p[X] - bbox[X];
+        VX_uint32 y = p[Y] - bbox[Y];
+        VX_uint32 z = p[Z] - bbox[Z];
+
+        clr = *(((VX_uint32*)node) + (powsz*z) + (sz*y) + x + 1);
+
+        //clr = model->fmt->ARGB32( model->fmt, rclr );
 
         if( (clr & 0x00FFFFFF) ){
             goto end;
@@ -118,7 +120,7 @@ static VX_uint32 raw_step( VX_araw_node * node , VX_model * model,
   end:    
     APPLY3( out, p, = );
 
-    return clr;    
+    return clr;
 }
 
 VX_uint32 VX_ao_ray( VX_model * self ,
@@ -151,7 +153,13 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 
     do{
         VX_uint32 type;
-        void * node = ao_addr( self->root , hw,
+
+        cube[X] = 0.0f;
+        cube[Y] = 0.0f;
+        cube[Z] = 0.0f;
+        cube[3] = hw;
+        
+        void * node = ao_addr( self->root,
                                dcam ,cube, &type );
 
         if( type == AOCT_RAW ){
@@ -162,7 +170,6 @@ VX_uint32 VX_ao_ray( VX_model * self ,
                           cube,
                           dcam,
                           out);
-            //return 0x0000ff00;
         }
         else if( type == AOCT_EMPTY ){
             /* do octree step */
