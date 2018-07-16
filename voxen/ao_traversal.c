@@ -17,6 +17,7 @@ static void * ao_addr( VX_oct_node * root ,
 {
     VX_uint32 order;
     register VX_byte * pord = (VX_byte*)&order;
+    float sum;
 
     while( (root->flags != 0) )
     {
@@ -27,13 +28,17 @@ static void * ao_addr( VX_oct_node * root ,
         }
 
         cube_point[3] = cube_point[3] * 0.5f;
-        pord[Z] = (addr[Z] >= (cube_point[Z] + cube_point[3]));
-        pord[Y] = (addr[Y] >= (cube_point[Y] + cube_point[3]));
-        pord[X] = (addr[X] >= (cube_point[X] + cube_point[3]));
+        sum = (cube_point[Z] + cube_point[3]);
+        pord[Z] = (addr[Z] >= sum);
+        cube_point[Z] = ( pord[Z] ? sum : cube_point[Z] );
 
-        cube_point[X] += ( pord[X] ? cube_point[3] : 0.0f );
-        cube_point[Y] += ( pord[Y] ? cube_point[3] : 0.0f );
-        cube_point[Z] += ( pord[Z] ? cube_point[3] : 0.0f );
+        sum = (cube_point[Y] + cube_point[3]);
+        pord[Y] = (addr[Y] >= sum);
+        cube_point[Y] = ( pord[Y] ? sum : cube_point[Y] );
+
+        sum = (cube_point[X] + cube_point[3]);
+        pord[X] = (addr[X] >= sum);
+        cube_point[X] = ( pord[X] ? sum : cube_point[X] );
 
         root = root->childs[ (pord[Z]<<2) | (pord[Y]<<1) | pord[X] ];
 
