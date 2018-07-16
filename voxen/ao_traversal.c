@@ -81,16 +81,16 @@ typedef struct raw_params {
 } raw_params;
 
 static VX_uint32 raw_step( VX_araw_node * node ,
-                           float * bbox ,
-                           float * dcam , float * out ){
+                           float * bbox , float * n_ray,
+                           /*float * dcam ,*/ float * p ){
     /* TODO: make better grid traversal */
     VX_uint32 sz = bbox[3];
 
-    float p[3] = {dcam[X], dcam[Y], dcam[Z]};
+    //float p[3] = {dcam[X], dcam[Y], dcam[Z]};
     
-    float xlen = p[X] - out[X];
-    float ylen = p[Y] - out[Y];
-    float zlen = p[Z] - out[Z];
+    float xlen = n_ray[X];
+    float ylen = n_ray[Y];
+    float zlen = n_ray[Z];
 
     float len = MAX( fabs(xlen) , MAX( fabs(ylen) , fabs(zlen) ) );
 
@@ -111,9 +111,9 @@ static VX_uint32 raw_step( VX_araw_node * node ,
             + (sz*(VX_uint32)(p[Y] - bbox[Y]))
             + (VX_uint32)(p[X] - bbox[X]);
 
-        p[X] -= stepx;
-        p[Y] -= stepy;
-        p[Z] -= stepz;
+        p[X] += stepx;
+        p[Y] += stepy;
+        p[Z] += stepz;
 
         if( idx >= pow3sz ){
             goto end;
@@ -134,7 +134,7 @@ static VX_uint32 raw_step( VX_araw_node * node ,
     clr = 0xFF000000;
 
   end:    
-    APPLY3( out, p, = );
+    //APPLY3( out, p, = );
 
     return clr;
 }
@@ -183,11 +183,14 @@ VX_uint32 VX_ao_ray( VX_model * self ,
         if( type == AOCT_RAW ){
             /* Do grid traversal */
             //return 0x0000ff00;
-            APPLY3( out , n_ray , += );
+            //APPLY3( out , n_ray , += ); 
             c = raw_step( node, 
-                          cube,
-                          dcam,
-                          out);
+                          cube, n_ray,
+                          //dcam,
+                          dcam);
+            APPLY3( out, dcam , = );
+                        
+           
         }
         else if( type == AOCT_EMPTY ){
             /* do octree step */
