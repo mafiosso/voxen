@@ -75,67 +75,40 @@ static inline VX_uint32 oct_step_fpu( VX_aoct_node * node ,
 }
 
 typedef struct raw_params {
-    float ylen;
-    float zlen;
-    float len;
+    float stepx;
+    float stepy;
+    float stepz;
 } raw_params;
 
 static VX_uint32 raw_step( VX_araw_node * node ,
-                           float * bbox , float * n_ray,
-                           /*float * dcam ,*/ float * p ){
+                           float * bbox , raw_params * rp,
+                           float * p ){
     /* TODO: make better grid traversal */
     VX_uint32 sz = bbox[3];
-
-    //float p[3] = {dcam[X], dcam[Y], dcam[Z]};
-    
-    float xlen = n_ray[X];
-    float ylen = n_ray[Y];
-    float zlen = n_ray[Z];
-
-    float len = MAX( fabs(xlen) , MAX( fabs(ylen) , fabs(zlen) ) );
-
-    float stepx = xlen / len;
-    float stepy = ylen / len;
-    float stepz = zlen / len;
     VX_uint32 powsz = sz*sz;
     VX_uint32 pow3sz = powsz * sz;
     
     VX_uint32 clr;
-    VX_uint32 i = 0;
-    //VX_uint32 lod = 1000;
 
-//    for( VX_uint32 i = 0 ; i < sz ; i++ ){ // TODO: save a lot
     while( POINT_IN_CUBE_FPU_P( bbox , p ) ){
-    // while(1){
         VX_uint32 idx = (powsz*(VX_uint32)(p[Z] - bbox[Z]))
             + (sz*(VX_uint32)(p[Y] - bbox[Y]))
             + (VX_uint32)(p[X] - bbox[X]);
 
-        p[X] += stepx;
-        p[Y] += stepy;
-        p[Z] += stepz;
-
-        if( idx >= pow3sz ){
-            goto end;
-        }
-    
-        //VX_byte * rclr = model->get_voxel(model, p[X], p[Y], p[Z], &lod);
         clr = *(((VX_uint32*)node) + idx +1);
 
-
-        //clr = model->fmt->ARGB32( model->fmt, rclr );
+        p[X] += rp->stepx;
+        p[Y] += rp->stepy;
+        p[Z] += rp->stepz;
 
         if( (clr & 0x00FFFFFF) ){
             goto end;
         }
-
     }
 
     clr = 0xFF000000;
 
   end:    
-    //APPLY3( out, p, = );
-
     return clr;
 }
 
@@ -169,6 +142,14 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 
     APPLY3( out , dcam , = );
 
+    float len = MAX( fabs(n_ray[X]) , MAX( fabs(n_ray[Y]) , fabs(n_ray[Z]) ) );
+
+    float stepx = n_ray[X] / len;
+    float stepy = n_ray[Y] / len;
+    float stepz = n_ray[Z] / len;
+
+    raw_params rp = {stepx, stepy, stepz};
+
     do{
         VX_uint32 type;
 
@@ -185,12 +166,9 @@ VX_uint32 VX_ao_ray( VX_model * self ,
             //return 0x0000ff00;
             //APPLY3( out , n_ray , += ); 
             c = raw_step( node, 
-                          cube, n_ray,
-                          //dcam,
+                          cube, &rp,
                           dcam);
-            APPLY3( out, dcam , = );
-                        
-           
+            APPLY3( out, dcam , = ); /* TODO: merge ... */
         }
         else if( type == AOCT_EMPTY ){
             /* do octree step */

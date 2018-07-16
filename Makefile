@@ -22,7 +22,7 @@ nopencl:
 	cd ./voxen/ && make CFLAGS="-O3" DEFINES="-D NO_OPENCL" CLIBS="-L/usr/lib -lSDL -Bstatic -lm -Bstatic -lc -lpthread" 
 	cd ./tests/ && make CFLAGS="-O3" DEFINES="-D NO_OPENCL" CLIBS="-L/usr/lib -lSDL -Bstatic -lm -Bstatic -lc -lpthread"
 	cd ./testapp/ && make CFLAGS="-O3" DEFINES="-D NO_OPENCL" CLIBS="-L/usr/lib -lSDL -Bstatic -lm -Bstatic -lc -lpthread"
-	
+
 debug:
 	cd ./voxen/ && make CFLAGS="-O0 -g3"
 	cd ./tests/ && make CFLAGS="-O0 -g3"
