@@ -62,6 +62,8 @@
 #define Y 1
 /** Index Z in 3-item vector array */
 #define Z 2
+/** Index Z in 4-item vector array */
+#define W 3
 
 /** Index A in 4-item color array */
 #define A 3

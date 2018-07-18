@@ -1,24 +1,27 @@
 #include "VX_lib.h"
 
+#define VISUALIZE_COMPLEXITY
+
 #define AOCT_EMPTY 0
 #define AOCT_RAW   1
 #define AOCT_NODE  2
 
 #define POINT_IN_CUBE_FPU_P( C , P )                                    \
-    ((P[X] >= C[X] &&( P[X] < C[X] + C[3])) &&                          \
-     (P[Y] >= C[Y] && (P[Y] < C[Y] + C[3])) &&                          \
-     (P[Z] >= C[Z] && (P[Z] < C[Z] + C[3])))                            \
+    ((P[X] >= C[X] && (P[X] < C[X] + C[W])) &&                          \
+     (P[Y] >= C[Y] && (P[Y] < C[Y] + C[W])) &&                          \
+     (P[Z] >= C[Z] && (P[Z] < C[Z] + C[W])))                            \
 
 
 static void * ao_addr( VX_oct_node * root ,
                        float * addr,
                        float * cube_point,
-                       VX_uint32 * type )
+                       VX_uint32 * type,
+                       VX_uint32 * color )
 {
     VX_uint32 order;
     register VX_byte * pord = (VX_byte*)&order;
 
-    while( (root->flags != 0) )
+    while ((root->flags != 0))
     {
         if( (root->flags & (1 << 31) ) ){
             /* its a raw subnode */
@@ -26,14 +29,16 @@ static void * ao_addr( VX_oct_node * root ,
             return root;
         }
 
-        cube_point[3] = cube_point[3] * 0.5f;
-        pord[Z] = (addr[Z] >= (cube_point[Z] + cube_point[3]));
-        pord[Y] = (addr[Y] >= (cube_point[Y] + cube_point[3]));
-        pord[X] = (addr[X] >= (cube_point[X] + cube_point[3]));
+        float w = cube_point[W] * 0.5f;
 
-        cube_point[X] += ( pord[X] ? cube_point[3] : 0.0f );
-        cube_point[Y] += ( pord[Y] ? cube_point[3] : 0.0f );
-        cube_point[Z] += ( pord[Z] ? cube_point[3] : 0.0f );
+        pord[Z] = (addr[Z] >= (cube_point[Z] + w));
+        pord[Y] = (addr[Y] >= (cube_point[Y] + w));
+        pord[X] = (addr[X] >= (cube_point[X] + w));
+
+        cube_point[X] += ( pord[X] ? w : 0.0f );
+        cube_point[Y] += ( pord[Y] ? w : 0.0f );
+        cube_point[Z] += ( pord[Z] ? w : 0.0f );
+        cube_point[W] = w;
 
         root = root->childs[ (pord[Z]<<2) | (pord[Y]<<1) | pord[X] ];
 
@@ -41,6 +46,16 @@ static void * ao_addr( VX_oct_node * root ,
             *type = AOCT_EMPTY;
             return NULL;
         }
+
+        #ifdef VISUALIZE_COMPLEXITY
+        const VX_uint32 cstep = 1;
+        *color += ((*color < 0x00FF) ? cstep
+                : ((*color < 0xFF00) ? cstep << 8
+                : cstep << 16));
+        if (*color > 0x00FFFFFF) {
+            *color = 0;
+        }
+        #endif
     }
 
     *type = AOCT_NODE;
@@ -54,16 +69,16 @@ static inline VX_uint32 oct_step_fpu( VX_aoct_node * node ,
                                       float * cube_point,
                                       VX_byte * lperm)
 {
-    float tp[3] = {cube_point[X] + cube_point[3] ,
-                   cube_point[Y] + cube_point[3] ,
-                   cube_point[Z] + cube_point[3] };
+    float tp[W] = {cube_point[X] + cube_point[W] ,
+                   cube_point[Y] + cube_point[W] ,
+                   cube_point[Z] + cube_point[W] };
 
     int ret = VX_cube_out_point_fpu( cube_point , tp ,
                                      (VX_fpoint3*)point_cam ,
                                      (VX_fpoint3*)n_ray ,
                                      point_out , lperm );
-    
-    if( ret < 0 ){ 
+
+    if( ret < 0 ){
         return 0x00ff00ff;
     }
 
@@ -84,10 +99,10 @@ static VX_uint32 raw_step( VX_araw_node * node ,
                            float * bbox , raw_params * rp,
                            float * p ){
     /* TODO: make better grid traversal */
-    VX_uint32 sz = bbox[3];
+    VX_uint32 sz = bbox[W];
     VX_uint32 powsz = sz*sz;
     VX_uint32 pow3sz = powsz * sz;
-    
+
     VX_uint32 clr;
 
     while( POINT_IN_CUBE_FPU_P( bbox , p ) ){
@@ -108,7 +123,7 @@ static VX_uint32 raw_step( VX_araw_node * node ,
 
     clr = 0xFF000000;
 
-  end:    
+  end:
     return clr;
 }
 
@@ -120,22 +135,22 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 {
     VX_uint32 line_perm = VX_line_sort( *((VX_fpoint3*)n_ray) );
     VX_byte * bperm = (VX_byte*)(&line_perm);
-    
+
     float hw = (float)self->dim_size.w;
 
-    float dcam[3] = {idcam[X] , idcam[Y] , idcam[Z]};
-    float out[3];
+    float dcam[W] = {idcam[X] , idcam[Y] , idcam[Z]};
+    float out[W];
     VX_uint32 c = 0x0;
     float cube[4] = {0,0,0, hw};
 
     if( !POINT_IN_CUBE_FPU_P( cube , idcam ) ){
         float * bx = cube;
-        float box_max[3] = {bx[X]+bx[3] , bx[Y] + bx[3] , bx[Z] + bx[3]};
-        int ret = VX_cube_in_point_fpu( bx , box_max , 
-                                        idcam , 
+        float box_max[W] = {bx[X]+bx[W] , bx[Y] + bx[W] , bx[Z] + bx[W]};
+        int ret = VX_cube_in_point_fpu( bx , box_max ,
+                                        idcam ,
                                         n_ray ,
                                         dcam , bperm );
-        
+
         if( ret < 0 )
             return 0;
     }
@@ -150,22 +165,24 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 
     raw_params rp = {stepx, stepy, stepz};
 
-    do{
-        VX_uint32 type;
 
+    VX_uint32 color = 0x0;
+
+    VX_uint32 type;
+
+    do {
         cube[X] = 0.0f;
         cube[Y] = 0.0f;
         cube[Z] = 0.0f;
-        cube[3] = hw;
-        
-        void * node = ao_addr( self->root,
-                               dcam ,cube, &type );
+        cube[W] = hw;
+
+        void * node = ao_addr(self->root, dcam, cube, &type, &color);
 
         if( type == AOCT_RAW ){
             /* Do grid traversal */
             //return 0x0000ff00;
-            //APPLY3( out , n_ray , += ); 
-            c = raw_step( node, 
+            //APPLY3( out , n_ray , += );
+            c = raw_step( node,
                           cube, &rp,
                           dcam);
             APPLY3( out, dcam , = ); /* TODO: merge ... */
@@ -179,15 +196,25 @@ VX_uint32 VX_ao_ray( VX_model * self ,
                           cube,
                           bperm);
         }
-        else if( type == AOCT_NODE ){
+        else if (type == AOCT_NODE) {
             c = ((VX_aoct_node*)node)->color;
         }
-        
-        if( c & 0x00FFFFFF ){ break;}
+
+        if (c & 0x00FFFFFF) {
+            #ifdef VISUALIZE_COMPLEXITY
+            c = color;
+            #endif
+            break;
+        }
+
         if( !(out[X] < hw && out[Y] < hw && out[Z] < hw &&
-              out[X] >= 0.0f && out[Y] >= 0.0f && out[Z] >= 0.0f ))
+              out[X] >= 0.0f && out[Y] >= 0.0f && out[Z] >= 0.0f )) {
             return 0;
-        
+        }
+
         APPLY3( dcam , out , = );
-    } while( 1 );
+
+    } while (1);
+
+    return c;
 }

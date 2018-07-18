@@ -442,10 +442,11 @@ void line_addressing( )
             direction_vect[X] = STEP*mul;
 
         if( ks[SDLK_q] )
+            direction_vect[Y] = -STEP*mul;
+        
+        if( ks[SDLK_e] )
             direction_vect[Y] = STEP*mul;
 
-        if( ks[SDLK_y] )
-            direction_vect[Y] = -STEP*mul;
 
         if( ks[SDLK_ESCAPE] ){
             if( g_fscreen_p ){

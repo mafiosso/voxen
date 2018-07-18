@@ -1,3 +1,10 @@
+# vscode
+.vscode/
+
+# Data
+data/
+!data/teacup/
+
 # Prerequisites
 *.d
 
@@ -45,6 +52,7 @@ testapp/testapp
 *.su
 *.idb
 *.pdb
+*callgrind*
 
 # Kernel Module Compile Results
 *.mod*
