@@ -49,11 +49,18 @@ static void * ao_addr( VX_oct_node * root ,
 
         #if VISUALIZE_COMPLEXITY
         const VX_uint32 cstep = 1;
-        *color += ((*color < 0x00FF) ? cstep
-                : ((*color < 0xFF00) ? cstep << 8
-                : cstep << 16));
+        if (*color < 0xFF00) {
+            *color -= 1;
+            *color += 1 << 8;
+        }
+        else if (*color < 0xFF0000) {
+            *color -= 1 << 8;
+            *color += 1 << 16;
+        } else {
+            *color += 1;
+        }
         if (*color > 0x00FFFFFF) {
-            *color = 0;
+            *color = 0x000000FF;
         }
         #endif
     }
@@ -166,7 +173,7 @@ VX_uint32 VX_ao_ray( VX_model * self ,
     raw_params rp = {stepx, stepy, stepz};
 
 
-    VX_uint32 color = 0x0;
+    VX_uint32 color = 0xFF;
 
     VX_uint32 type;
 
