@@ -1,6 +1,6 @@
 #include "VX_lib.h"
 
-#define VISUALIZE_COMPLEXITY
+#define VISUALIZE_COMPLEXITY 0
 
 #define AOCT_EMPTY 0
 #define AOCT_RAW   1
@@ -47,7 +47,7 @@ static void * ao_addr( VX_oct_node * root ,
             return NULL;
         }
 
-        #ifdef VISUALIZE_COMPLEXITY
+        #if VISUALIZE_COMPLEXITY
         const VX_uint32 cstep = 1;
         *color += ((*color < 0x00FF) ? cstep
                 : ((*color < 0xFF00) ? cstep << 8
@@ -201,7 +201,7 @@ VX_uint32 VX_ao_ray( VX_model * self ,
         }
 
         if (c & 0x00FFFFFF) {
-            #ifdef VISUALIZE_COMPLEXITY
+            #if VISUALIZE_COMPLEXITY
             c = color;
             #endif
             break;
