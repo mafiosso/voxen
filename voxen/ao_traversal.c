@@ -10,6 +10,53 @@
      (P[Z] >= C[Z] && (P[Z] < C[Z] + C[3])))                            \
 
 
+static void * alu_addr( VX_oct_node * root,
+                        VX_uint32 * addr,
+                        VX_uint32 * cube,
+                        VX_uint32 * type )
+{
+    VX_byte idx = 0;
+    VX_uint32 add;
+    VX_byte ord = 0;
+    
+    while( (root->flags != 0) )
+    {
+        if( (root->flags & (1 << 31) ) ){
+            /* its a raw subnode */
+            *type = AOCT_RAW;
+            return root;
+        }
+
+        cube[3] >>= 1;
+        
+        add = cube[Z] + cube[3];
+        ord = (addr[Z] >= add );
+        idx = ord << 2;
+        cube[Z] += ord * add;
+        
+        add = cube[Y] + cube[3];
+        ord = (addr[Y] >= add );
+        idx |= ord << 1;
+        cube[Y] += (addr >= add ) * add;
+
+        add = cube[X] + cube[3];
+        ord = (addr[X] >= add );
+        idx |= ord;
+        cube[Z] += (addr >= add ) * add;
+
+        root = root->childs[idx];
+
+        if( !root ){
+            *type = AOCT_EMPTY;
+            return NULL;
+        }        
+    }
+
+    
+    *type = AOCT_NODE;
+    return root;
+}
+
 static void * ao_addr( VX_oct_node * root ,
                        float * addr,
                        float * cube_point,
@@ -127,6 +174,7 @@ VX_uint32 VX_ao_ray( VX_model * self ,
     VX_byte * bperm = (VX_byte*)(&line_perm);
     
     float hw = (float)self->dim_size.w;
+    //  VX_uint32 ihw = self->dim_size.w;
 
     float dcam[3] = {idcam[X] , idcam[Y] , idcam[Z]};
     float out[3];
@@ -155,17 +203,25 @@ VX_uint32 VX_ao_ray( VX_model * self ,
 
     raw_params rp = {stepx, stepy, stepz};
 
+    //VX_uint32 icube[4];
+    //VX_uint32 udcam[3];
+
     do{
         VX_uint32 type;
 
-        cube[X] = 0.0f;
-        cube[Y] = 0.0f;
-        cube[Z] = 0.0f;
+        cube[X] = 0;
+        cube[Y] = 0;
+        cube[Z] = 0;
         cube[3] = hw;
-        
-        void * node = ao_addr( self->root,
-                               dcam ,cube, &type );
 
+//        APPLY3( udcam, dcam, = );
+
+        void * node = ao_addr( self->root,
+                                dcam ,cube, &type );
+
+/*        APPLY3( cube, icube, = );
+        cube[3] = icube[3];
+*/
         if( type == AOCT_RAW ){
             /* Do grid traversal */
             //return 0x0000ff00;

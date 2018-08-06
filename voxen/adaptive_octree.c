@@ -273,10 +273,11 @@ static void VX_aoct_inspect( VX_model * self ){
 
     printf("Adaptive octree info: size %d x %d x %d \n" , 
            self->dim_size.w , self->dim_size.h , self->dim_size.d );
-    printf("Adaptive octree stats: nodes %d total B used: %u\nleaf: %d raws: %d\n" ,
+    printf("Adaptive octree stats: nodes %d total B used: %u\nleaf: %d raws: %d\nlvl: %d\n" ,
            voxels ,
            size ,
-           leaf_vox , raws );
+           leaf_vox , raws, lvl );
+
 
 }
 
@@ -288,17 +289,17 @@ static void VX_aoct_free( VX_model * self ){
 
 static VX_uint32 _oct_black = 0;
 
-static inline VX_byte * aoct_get_vox_impl( VX_oct_node * root ,
-                                           VX_uint32 w,
+static inline VX_byte * aoct_get_vox_impl( VX_model * self ,
                                            VX_uint32 x,
                                            VX_uint32 y,
                                            VX_uint32 z,
-                                           VX_ms_block * b,
-                                           int * lod )
+                                           VX_uint32 * lod)
 {
-    *b = (VX_ms_block){ 0 , 0 , 0 , w , w , w };
-    VX_uint32 hw = w;
+    VX_uint32 hw = self->dim_size.w;
+    VX_uint32 b [4] = {0,0,0, hw};
+    VX_oct_node * root = self->root;
     VX_uint32 z_order, y_order, x_order;
+    VX_uint32 mask = 1 << ((VX_oct_info*)self->data)->stack_len-1;
 
     while( root && root->flags /*&& (*lod > 0)*/ )
     {
@@ -306,9 +307,9 @@ static inline VX_byte * aoct_get_vox_impl( VX_oct_node * root ,
             /* its a raw subnode */
             //printf("raw \n"  );
 
-            VX_uint32 dpos[3] = { x - b->x1 ,
-                                  y - b->y1 , 
-                                  z - b->z1 };
+            VX_uint32 dpos[3] = { x - b[X] ,
+                                  y - b[Y] , 
+                                  z - b[Z] };
             VX_byte * raw = (VX_byte*)root;
 
             return raw + ((1 + (dpos[Z] * hw * hw) +
@@ -316,27 +317,25 @@ static inline VX_byte * aoct_get_vox_impl( VX_oct_node * root ,
         }
 
         hw >>= 1;
-        z_order = (z >= (b->z1 + hw));
-        y_order = (y >= (b->y1 + hw));
-        x_order = (x >= (b->x1 + hw));
+
+        z_order = (z & mask) > 0;
+        y_order = (y & mask) > 0;
+        x_order = (x & mask) > 0;
 
         /* 0 or 1 * hw will give hw or 0 => ifless benefit */
         /* recycle add variable - give the compiler chance */
         VX_uint32 add = (x_order) * hw;
-        b->x1 += add;
-        b->x2 += add - hw;
-
+        b[X] += add;
         add = (y_order) * hw;
-        b->y1 += add;
-        b->y2 += add - hw;
-
+        b[Y] += add;
         add = (z_order) * hw;
-        b->z1 += add;
-        b->z2 += add - hw;
+        b[Z] += add;
 
         /* | faster than + but in this case equivalent */
         root = root->childs[ (z_order<<2) | (y_order<<1) | (x_order) ];
         *lod = (*lod)-1;
+
+        mask >>= 1;
     }
 
     if( root )
@@ -351,8 +350,7 @@ static VX_byte * VX_aoct_get_voxel( VX_model * self ,
                                     VX_uint32 z ,
                                     int * lod )
 {
-    VX_ms_block b;
-    return aoct_get_vox_impl( self->root , self->dim_size.w , x , y , z , &b , lod );
+    return aoct_get_vox_impl( self , x , y , z , lod );
 }
 
 static VX_uint32 toARGB32( VX_format * self , VX_byte * chunk ){
